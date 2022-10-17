@@ -33,3 +33,26 @@ print('cuatro' in d) # in busca en las claves
 print(4 in d)
 print(4 in d.values()) # busqueda en valores
 
+# Errores en un diccionario
+try:
+    print(d['cinco'])
+except Exception as e:
+    print(e.__class__.__name__, e)
+    
+# Utilizar como clave un objeto mutable
+try:
+    d = {[1,2]:12, [3,4]:34}
+except Exception as e:
+    print(e.__class__.__name__, e)
+
+
+
+
+
+
+
+
+
+
+
+
