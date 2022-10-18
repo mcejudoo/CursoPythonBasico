@@ -18,10 +18,15 @@ importe> ....
 
 tipos_billetes = (50,20,10)
 while True:
-    importe = int(input('importe:>'))
+    str_importe = input('importe:>')
+    if not str_importe.isnumeric():
+        print('se requiere un numero entero')
+        continue
+    else:
+        importe = int(str_importe)     
+
     if importe < 0 or importe % min(tipos_billetes) != 0:
-        print('importe no valido')
-        
+        print('importe no valido')        
     else:
         billetes = dict()
         for b in tipos_billetes:

@@ -20,7 +20,8 @@ for i in frase:
 print(hist) 
 
 # Imprimir en orden DESC el recuento de cada letra
-
+print(sorted(hist.items(), key=lambda t:t[1], reverse=True))
+exit()
 
 
 # SOLUCION 2              
