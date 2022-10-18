@@ -17,7 +17,10 @@ for i in frase:
         hist[i] = hist[i] + 1
     else:
         hist[i] = 1        
-print(hist)  
+print(hist) 
+
+# Imprimir en orden DESC el recuento de cada letra
+
 
 
 # SOLUCION 2              

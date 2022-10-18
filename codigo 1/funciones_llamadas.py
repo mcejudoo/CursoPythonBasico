@@ -2,6 +2,8 @@
 Ejemplos de llamadas en python
 """
 
+from random import randint
+
 def segundos(h,m,s):
     """
     Convierte h,m,s a segundos
@@ -29,10 +31,26 @@ if __name__ == "__main__":
     L = [12,30,45]
     print(segundos(*L))
 
+    # Con eval + format y a traves de una cadena
+    s = "segundos({},{},{})".format(12,30,15)
+    print(s)
+    print(eval((s)))
+
+    exit()
+
+
     # Definir una lista de horas aleatorias (con tripletas: tuplas) y luego
-    # convertirlas en segundos y almacenar el resultado en otra lista
+    # convertirlas en segundos y almacenar el resultado en otra listan 
+    L = []
+    for i in range(10):
+        L += [(randint(0,23),randint(0,59),randint(0,59))]
+    print(L[:3])
+
+    L2 = []
+    for t in L:
+        L2 += [segundos(*t)]
+    print(L2[:3])
 
 
-    
 
 
