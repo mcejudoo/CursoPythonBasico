@@ -16,9 +16,7 @@ n1 = 4
 n2 = 100
 
 #1) Generar una lista de N numeros aleatorios
-aleatorios = []
-for i in range(N):
-    aleatorios+=[randint(0,n2-1)]
+aleatorios = [randint(0,n2-1) for _ in range(N)]
 print(aleatorios[:5])
 
 #2) Generar una estructura para almacenar los intervalos
