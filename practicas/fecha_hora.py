@@ -26,7 +26,7 @@ class Date:
         return "%02d/%02d/%04d" % (self.dd,self.mm,self.yy)
 
     def esBisiesto(self):
-        anyo = self.__yy    
+        anyo = self.yy    
         if  (anyo % 4 == 0 and anyo % 100 != 0) or (anyo%100 == 0 and anyo % 400 == 0):
             return True    
         else:
