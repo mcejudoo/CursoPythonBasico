@@ -1,0 +1,5 @@
+PRODUCTO           	IMPORTE	    IVA	  TOTAL
+Ordenador Sobremesa	 660.50	 139.00	 799.50
+Teclado            	  45.56	  10.00	  55.56
+Impresora          	 124.30	  26.00	 150.30
+Tableta            	 223.70	  47.00	 270.70

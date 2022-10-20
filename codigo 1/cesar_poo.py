@@ -8,7 +8,7 @@ import string
 class AlgoritmoCesar:
     
     # Variable de clase ()
-    alf = " "+string.ascii_letters+string.digits
+    alf = " "+string.ascii_letters+string.digits+"ÑÁÉÍÓÚñáéíóú\t¿¡ü<<->>_\n\r«"+string.punctuation
 
     def __init__(self,k=5):
         self.__k = k
@@ -16,11 +16,16 @@ class AlgoritmoCesar:
     def __codificarCadena(self, cadena):
         """
         Entrada cadena y salida lista de numeros
-        """
+        """       
         L = []
         for i in cadena:
-            L.append(AlgoritmoCesar.alf.index(i))
-        return L
+            try:
+                L.append(AlgoritmoCesar.alf.index(i))
+
+            except Exception as e:
+                print("ERROR: ",e, i)
+                continue
+        return L       
 
     def __decodificarCadena(self,numeros):
         """

@@ -38,7 +38,7 @@ class Idioma:
 
 if __name__ == '__main__':
     try:
-        i = Idioma('er')
+        i = Idioma('es')
         print(i.get('jj'))
     except Exception as e:
         print(e.__class__.__name__,e)
