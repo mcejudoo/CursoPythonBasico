@@ -1,0 +1,25 @@
+app
+   principal.py (main)
+
+   modulos <dir>
+       __init__.py
+       tiempo <dir>
+          __init__.py
+          date.py  class Date
+          time.py  class Time 
+          datetime.py class DateTime
+
+
+
+
+
+es.empresa.app
+
+es
+   __init__.py
+   empresa
+       __init__.py
+
+       app
+	  __init__.py
+          modulo1.py

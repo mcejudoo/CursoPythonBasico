@@ -8,6 +8,7 @@ def imprimirCodigo(nombreScript):
     f=None
     try:
         f = open(nombreScript, "r")
+        
         for linea in f:
             print(linea.rstrip())
 
