@@ -54,25 +54,54 @@ class PedidoBD:
 
         self.con = dbapi.connect(path)
 
-    def select(self, pais=None):
-        cur = None
-        try:
-            sql = """select p.idpedido, p.idcliente, 
+
+    def __getSQL(self):
+        sql = """select p.idpedido, p.idcliente, 
             p.importe, p.pais, emp.id as idemp,emp.nombre,emp.cargo, e.id as ide, e.nombre from pedidos p
             inner join empresasenvios e on p.idempresaenvio=e.id
             inner join empleados emp on p.idempleado=emp.id        
-            """
+            """         
+        return sql
+
+    def __getPedido(self, t):
+        tE = t[-2:]
+        tEmp = t[-5:-2]            
+        empresa = Empresa(*tE)
+        empleado = Empleado(*tEmp)
+        tPed = t[:4] + (empresa, empleado)
+        return Pedido(*tPed)
+
+    def read(self, idpedido):
+        cur = None
+        try:
+            sql = self.__getSQL()+ " where p.idpedido = ?"
+            cur = self.con.cursor()
+            cur.execute(sql, (idpedido,))
+            t = cur.fetchone()
+            if not t:
+                raise ValueError(f"El idpedido {idpedido} no existe")
+            else:
+                return self.__getPedido(t)
+        except Exception as e:
+            raise e
+        finally:
+            if cur: cur.close()       
+
+    def select(self, pais=None):
+        cur = None
+        try:
+            sql = self.__getSQL()   
             pedidos = list()
             cur = self.con.cursor()
-            cur.execute(sql)
+
+            if pais:
+                sql += " where pais = ?" 
+                cur.execute(sql, (pais,))
+            else:
+                cur.execute(sql)
 
             for t in cur.fetchall():
-                tE = t[-2:]
-                tEmp = t[-5:-2]            
-                empresa = Empresa(*tE)
-                empleado = Empleado(*tEmp)
-                tPed = t[:4] + (empresa, empleado)
-                pedido = Pedido(*tPed)
+                pedido = self.__getPedido(t)
                 pedidos.append(pedido)
             
             return pedidos
@@ -87,5 +116,7 @@ class PedidoBD:
 
 if __name__ == '__main__':
     bd = PedidoBD('../BD/empresa3.db')     
-    L = bd.select()       
-    print(L[:5])
+    L = bd.select("Alemania")       
+    #print(L[:5])
+    ped = bd.read(10248)
+    print(ped)
