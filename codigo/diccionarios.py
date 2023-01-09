@@ -48,6 +48,14 @@ for i in L:
 
 print(d)
 
+# Histograma versión 2:
+claves = set(L)
+d2 = dict()
+for c in claves:
+    d2[c] = L.count(c)
+
+print(d2)    
+
 
 
 
