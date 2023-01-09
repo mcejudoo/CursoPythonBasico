@@ -1,0 +1,16 @@
+0x2F: 0010 1111
+0x4A: 0100 1010
+
+&   : 0000 1010: 0x0A
+
+
+n = 0x2F: 0010 1111
+n << 2  -> equivale a mul. 2^2 (nro. de bits)
+1011 1100  0xBC
+
+
+n = 0x2F: 0010 1111
+n >> 3 -> equivale a div. 2^2 (nro. de bits)
+0000 0101 : 0x05
+
+

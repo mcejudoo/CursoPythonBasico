@@ -30,3 +30,17 @@ if n < ini or n > fin:
 else:
     print(n,'cumple el intervalo')
     
+# Comparar dos numeros:
+n1 = 10
+n2 = 45
+if n1 < n2:
+    print('menor: ', n1)
+
+elif n1 == n2:
+    print('Son iguales')
+
+else:
+    print('menor', n2)
+
+print(n1 < n2)
+
