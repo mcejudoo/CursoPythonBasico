@@ -1,0 +1,7 @@
+Aplicaciones:
+Web -> Django
+Escritorio -> PyQt
+Base de datos: MySQL, Oracle, ... / Redis / Mongo / 
+Análisis de datos: Anaconda3, ML, DL ...
+Ficheros xlsx, csv, ... pandas
+micropython: microcontroladores, IoT
