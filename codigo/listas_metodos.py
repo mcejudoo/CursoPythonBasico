@@ -74,6 +74,34 @@ L3 = [(23,5,66), (888,555),(1,4,0),(8,9,1,1,4)]
 L3.sort(key=sum, reverse=True)
 print(L3)
 
+# Invertir:
+print(L2)
+L2.reverse() # L2[::-1]
+print(L2)
+
+# Copiar listas:
+L1 = [1,2,3,4,5]
+L2 = L1  # Crea una referencia no copia la variable! Por que es MUTABLE!! dict, set y list
+L1[0] = 1000
+print('L1',L1, id(L1))
+print('L2',L2, id(L2))
+
+# Con cadenas: INMUTABLES! str, tuple
+s1 = "hola"
+s2 = s1
+s1 += "adios"
+print('s1',s1,id(s1))
+print('s2',s2,id(s2))
+
+# Copiar listas (bien)
+L1 = [1,2,3,4,5]
+L2 = L1.copy()  # Crea una copia: funciona igual en: set, dict, list
+L1[0] = 1000
+print('L1',L1)
+print(id(L1))
+print('L2',L2)
+print(id(L2))
+
 
 
 
