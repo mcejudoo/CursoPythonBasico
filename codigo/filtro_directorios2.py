@@ -22,10 +22,10 @@ def obtenerExtensiones(path):
     return list(c)
    
 
-def clasificarFicheros():
+def clasificarFicheros(path):
     # Clasificar ficheros por ext. por una lado los: py, los pdf, los xlsx, etc.
     directorio = dict()
-    L = os.listdir()
+    L = os.listdir(path)
     for i in L:
         ext = i.partition('.')[2]
         if ext in directorio:
@@ -34,13 +34,7 @@ def clasificarFicheros():
         else:
             # Creamos la lista con el primer fichero
             directorio[ext] = [i]
-
-    print('Directorio:')
-    for ext, L in directorio.items():
-        print(ext)
-        for i in L:
-            print('\t',i)
-
+    return directorio
 
 if __name__ =='__main__':
     extensiones = ('txt','ipynb')
@@ -49,4 +43,11 @@ if __name__ =='__main__':
 
     L = obtenerExtensiones('.')
     print('Extensiones de los ficheros: ', L)
+
+    directorio = clasificarFicheros('.')
+    print('Directorio:')
+    for ext, L in directorio.items():
+        print(ext)
+        for i in L:
+            print('\t',i)
 
