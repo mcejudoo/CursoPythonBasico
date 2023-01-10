@@ -28,4 +28,9 @@ if __name__ == '__main__':
     L = [(1,3),(4,5),(8,8),(9,0),(6,7)]
     # Obtener una lista con las sumas de los elementos de las tuplas
     # utilizando la función sumar.
+    L2 = []
+    for t in L:
+        L2.append(sumar(*t))
+    print(L)
+    print(L2)
 

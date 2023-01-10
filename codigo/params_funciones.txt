@@ -1,0 +1,6 @@
+def funcion1(a=0,b=0,c=0):
+	pass
+
+
+funcion1()
+funcion1(c=10)

@@ -1,0 +1,12 @@
+L = [1,2,3,4,5,6]
+
+Python con funciones:
+nombre_funcion(parametros)
+
+Ejemplo: sum(L)
+
+
+Python orientado a objetos:
+objeto.metodo(parametros)
+
+Ejemplo: L.count(10)
