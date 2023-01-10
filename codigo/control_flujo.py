@@ -50,3 +50,47 @@ for i in range(len(L)):
 for pos, i in enumerate(L):
     print(pos, i)
 
+m = [[1,2,3], [4,5,6], [7,8,9]]
+print('La primera fila: ', m[0])
+print('El primer número:', m[0][0])
+
+# Imprimir m en forma de tabla:
+for L in m:
+    for i in L:
+        print(i,end='\t')
+    print()
+
+
+for i in range(10):
+    if i == 5:
+        continue
+    print(i, end=' ')
+print()
+
+for i in range(10):
+    if i == 5:
+        break
+    print(i, end=' ')
+print()
+
+for i in range(10):
+    print(i, end=' ')
+else:
+    print('Fin bucle')
+
+i = 1
+while i <= 10:
+    print(i, end=' ')
+    i += 1
+else:
+    print('Fin while')
+
+n1=11
+n2=20
+if n1 < n2:
+    menor=n1
+else:
+    menor=n2
+
+menor = n1 if n1 < n2 else n2 
+print("par" if n1 % 2 == 0 else "impar")
