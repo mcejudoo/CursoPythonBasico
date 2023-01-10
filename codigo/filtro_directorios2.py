@@ -4,23 +4,23 @@ de un directorio.
 """
 import os
 
-def filtroFicherosPorExtension():
+def filtroFicherosPorExtension(path, extensiones):
     # Filtrar ficheros por extensión
-    L = os.listdir()
-    extensiones = ('txt','ipynb')
+    L = os.listdir(path)  
+    ficheros = []
     for i in L:
         if i.partition('.')[2] in extensiones:
-            print(i)
+            ficheros.append(i)
+    return ficheros
 
-
-def obtenerExtensiones():
+def obtenerExtensiones(path):
     # Obtener las distintas extensiones de los ficheros de una carpeta:
     c = set()
-    L = os.listdir()
+    L = os.listdir(path)
     for i in L:
         c.add(i.partition('.')[2])
-    print('Extensiones de los ficheros: ', c)
-
+    return list(c)
+   
 
 def clasificarFicheros():
     # Clasificar ficheros por ext. por una lado los: py, los pdf, los xlsx, etc.
@@ -43,5 +43,10 @@ def clasificarFicheros():
 
 
 if __name__ =='__main__':
-    filtroFicherosPorExtension()
+    extensiones = ('txt','ipynb')
+    L = filtroFicherosPorExtension('.', extensiones)
+    print(L)
+
+    L = obtenerExtensiones('.')
+    print('Extensiones de los ficheros: ', L)
 
