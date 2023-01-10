@@ -11,16 +11,21 @@ importe:>230
 """
 L = [50,20,10]
 while True:
-    importe = int(input('Importe:> '))
-    if importe % 10 == 0:
-        billetes = dict()
-        for b in L:
-            if importe >= b:
-                billetes[b] = importe // b
-                importe %= b
-        print(billetes)
-    
+    sImporte = input('Importe:> ')
+    if sImporte.isnumeric():
+        importe = int(sImporte)
+
+        if importe % 10 == 0:
+            billetes = dict()
+            for b in L:
+                if importe >= b:
+                    billetes[b] = importe // b
+                    importe %= b
+            print(billetes)
+        
+        else:
+            print('Importe incorrecto, teclear múltiplo de 10')
     else:
-        print('Importe incorrecto, teclear múltiplo de 10')
+        print('Teclear sólo números ...')
 
     
