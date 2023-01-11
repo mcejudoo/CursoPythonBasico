@@ -13,7 +13,6 @@ def generarDatos(año=2022, n=100):
     return L
 
 def histogramaMes(L):
-
     """
     Histograma mensual de ingresos
     """
@@ -22,12 +21,28 @@ def histogramaMes(L):
     # imprimir el mes y el ingreso
     for t in L:
         fecha, ingreso = t
-        print(fecha.month, ingreso)
+        mes = fecha.month
+        if mes in histo:
+            # Tenemos que acumular el ingreso:
+            histo[mes] += ingreso
+
+        else:
+            # Es el primer ingreso del mes
+            histo[mes] = ingreso
+
+    return histo
+
+def ordenarImprimir(histo):
+    meses = {1:'Ene',2:'Feb',3:'Mar',4:'Abr',5:'May',6:'Jun', \
+        7:'Jul',8:'Ago',9:'Sep',10:'Oct',11:'Nov',12:'Dic'}
+
+    L = sorted(histo.items(), key=lambda t:t[1], reverse=True)
+    for mes, ingreso in L:
+        print(meses[mes],'\t',ingreso)
 
 if __name__ == '__main__':
-    L = generarDatos(n=5)
-    #print(L[:5])
-    histogramaMes(L)
-
+    L = generarDatos()   
+    histo = histogramaMes(L)
+    ordenarImprimir(histo)
 
 
