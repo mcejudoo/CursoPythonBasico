@@ -1,0 +1,14 @@
+Relaciones entre clases:
+- Herencia: Clases que tengan un conocimiento en común
+	
+- Composición: Una clase se desglosa en partes que a su
+vez son objetos de otras clases.
+Coche: motor, chasis, ruedas, puertas
+Ordenador: cpu, memoria, disco ...
+
+- Asociación: Cuando dos o mas objetos interáctuan en el tiempo
+pero solo en un instante dado.
+Coche
+SurtidorGas
+
+coche.repostar(surtidorGas)

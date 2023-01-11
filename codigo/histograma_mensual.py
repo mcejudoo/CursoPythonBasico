@@ -40,10 +40,10 @@ def ordenarImprimir(histo):
     ingresosTotales = sum([t[1] for t in L])
     
     for mes, ingreso in L:
-        print(meses[mes],'\t',ingreso, '\t', round(ingreso/ingresosTotales*100,2),"%")
+        print(meses[mes],'\t',ingreso, '\t', round((ingreso/ingresosTotales)*100,2),"%")
 
 if __name__ == '__main__':
-    L = generarDatos()   
+    L = generarDatos(n=150)   
     histo = histogramaMes(L)
     ordenarImprimir(histo)
 
