@@ -13,17 +13,20 @@ def generarDatos(año=2022, n=100):
     return L
 
 def histogramaMes(L):
+
     """
     Histograma mensual de ingresos
     """
     histo = dict()
 
     # imprimir el mes y el ingreso
+    for t in L:
+        fecha, ingreso = t
+        print(fecha.month, ingreso)
 
 if __name__ == '__main__':
-    L = generarDatos()
-    print(L[:5])
-
+    L = generarDatos(n=5)
+    #print(L[:5])
     histogramaMes(L)
 
 
