@@ -1,11 +1,20 @@
 """
 Funciones en Python. Distintas formas de llamar a una función
 """
+path="/home"
 
-def sumar(a,b):
+def sumar(a,b): 
+    global path
+    path="hola"
     return a + b
 
+def sumaResta(a,b):
+    return a + b, a - b
+
 if __name__ == '__main__':
+    s,r = sumaResta(1,3)
+    print('suma: ', s, 'resta: ', r)
+   
     # 1) Posicional:
     print(sumar(1,2))
 
