@@ -37,8 +37,10 @@ def ordenarImprimir(histo):
         7:'Jul',8:'Ago',9:'Sep',10:'Oct',11:'Nov',12:'Dic'}
 
     L = sorted(histo.items(), key=lambda t:t[1], reverse=True)
+    ingresosTotales = sum([t[1] for t in L])
+    
     for mes, ingreso in L:
-        print(meses[mes],'\t',ingreso)
+        print(meses[mes],'\t',ingreso, '\t', round(ingreso/ingresosTotales*100,2),"%")
 
 if __name__ == '__main__':
     L = generarDatos()   
