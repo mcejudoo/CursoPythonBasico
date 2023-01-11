@@ -48,6 +48,7 @@ class Departamento:
         self.nombre=nombre
         self.empleados = []
         self.empleados.extend(args)
+        self.indice = -1
 
     def imprimir(self):
         print(self.nombre)
@@ -58,6 +59,26 @@ class Departamento:
         self.empleados.append(emp)
         self.empleados.extend(args)
 
+    def __len__(self):
+        return len(self.empleados)
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.indice+1 == len(self.empleados):
+            self.indice=-1
+            raise StopIteration
+
+        self.indice+=1
+        return self.empleados[self.indice]
+
+    def __add__(self, other):
+        nuevo = Departamento(self.nombre+" y "+other.nombre)
+        nuevo.empleados.extend(self.empleados)
+        nuevo.empleados.extend(other.empleados)
+        return nuevo        
+
 def testDepartamento():
     emp1 = Empleado('Sandra',34,"Santander",3000.0)
     emp2 = Empleado('Jose',24,"Santander",2300.0)
@@ -67,8 +88,17 @@ def testDepartamento():
     dpo = Departamento('Desarrollo Python', emp1, emp2)
     dpo.imprimir()
     print()
-    dpo.alta(emp3, emp4)
+    dpo.alta(emp3)
     dpo.imprimir()
+    print('\nNumero de Empleados: ', len(dpo))
+    for i in dpo:
+        print(i)   
+
+    dpo2 = Departamento('Desarrollo Java', emp4)
+    dpo2.imprimir()
+    todos = dpo + dpo2 # dpo.__add__(dpo2)
+    print('\nTODOS:')
+    todos.imprimir()
 
 
 def testPersona():
