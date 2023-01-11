@@ -1,0 +1,12 @@
+Funciones del lenguaje vs Funciones Especiales
+str() 				__str__()
+repr()				__repr__()
+len()				__len__()
+del()				__del__()
+
+<				__lt__()
+>				__gt__()
+==				__eq__()
+
++				__add__()
+-				__sub__()

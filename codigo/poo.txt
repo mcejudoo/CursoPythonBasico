@@ -1,0 +1,20 @@
+Personas:
+características (describen) -> atributos / propiedades -> variables
+   peso
+   altura
+   color de pelo
+   color de ojos
+acciones (métodos) -> funciones:
+   comer()
+   dormir()
+   reir()
+   saltar()
+
+objeto1	 
+   peso: 69
+   altura: 1.67
+   color de pelo: moreno
+   color de ojos: negros
+
+   persona1 = Persona("nombre",peso, altura)
+   persona1.saltar()
