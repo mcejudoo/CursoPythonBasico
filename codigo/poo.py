@@ -6,9 +6,17 @@ class Persona:
     """
     Definición de la clase persona
     """
+    # Atributo de clase:
+    contador = 0
+
     def __init__(self,nombre="",edad=0):
         self.nombre = nombre
         self.edad = edad
+        Persona.contador+=1
+
+    @staticmethod
+    def numeroInstancias():
+        return Persona.contador
 
     def __str__(self):
         return self.nombre + " " + str(self.edad)
@@ -25,8 +33,14 @@ class Persona:
     def cumplirAños(self):
         self.edad+=1
 
+    def __del__(self):
+        Persona.contador-=1
+        #print('Borrando: ', self.nombre)
+
 
 class Empleado(Persona):
+
+    # Atributos de clase:
     
     def __init__(self, nombre="", edad=0, empresa="",sueldo=0):
         # Llamar al constructor de la clase Padre:
@@ -101,7 +115,14 @@ def testDepartamento():
     todos.imprimir()
 
 
-def testPersona():
+def testPersona():    
+    p = Persona('Otro', 33)
+    print('Nombre:', p.nombre)
+    print(p)
+    print('Instancias:',Persona.numeroInstancias())
+    del(p)
+    print('Instancias:',Persona.numeroInstancias())
+
     p1 = Persona('Andres', 66)
     print(p1)
     p1.cumplirAños()
@@ -116,6 +137,23 @@ def testPersona():
     L.sort()
     print(L)
 
+    print('p1:',p1)
+    print(p1.__dict__)
+    
+    p1.__dict__['tno']=914736332
+    print(p1.__dict__)
+    print(p1.tno)
+
+    tnos = [600123456, 650890556, 6770445533, 666777222]
+    for pos, p in enumerate(L):
+        p.tno = tnos[pos]
+
+    # Lista de diccionarios:
+    L2 = [p.__dict__ for p in L]
+    print(L2)
+    print('Instancias:',Persona.numeroInstancias())
+
+
 def testEmpleado():
     emp1 = Empleado('Sandra',34,"Santander",3000.0)
     print(emp1)
@@ -123,7 +161,8 @@ def testEmpleado():
     print(emp1)
 
 if __name__ == '__main__':
-    testDepartamento()
+    #testDepartamento()
+    testPersona()
 
    
 
