@@ -1,0 +1,10 @@
+id;empresaEOL (end of line  \n)
+1;Speedy ExpressEOL
+2;United PackageEOL
+3;Federal ShippingEOL
+EOF (end of file)
+
+Hola queXtal
+        ^
+
+

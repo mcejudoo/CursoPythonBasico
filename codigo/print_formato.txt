@@ -1,0 +1,19 @@
+%6.2f
+
+xxxx.xx
+
+hh=9
+mm=2
+ss=34
+
+print("%d:%d:%d" % (hh,mm,ss))
+9:2:34
+
+print("%2d:%2d:%2d" % (hh,mm,ss))
+ 9: 2:34
+
+print("%02d:%02d:%02d" % (hh,mm,ss))
+09:02:34
+
+
+
