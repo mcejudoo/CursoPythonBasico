@@ -3,6 +3,17 @@ Pruebas con ficheros: lectura / escritura
 Capturar los parámetros del programa
 """
 import sys
+import pandas as pd
+
+
+def carga():
+    dt = pd.read_csv('ficheros/Pedidos.txt', sep=';')
+    dt.to_csv('ficheros/pedidos2.txt',sep='\t')
+    print(dt)
+
+    dt = dt[dt.pais=='Alemania']
+    print(round(dt['importe'].sum(),2))
+    #print(dt.head())
 
 def parametros():
     print(sys.argv)
@@ -49,7 +60,7 @@ def filtrarPais(path, pais):
             if cabs:
                 f_out.write(linea)
                 cabs = False
-                
+
             if pais in linea:
                 f_out.write(linea)
                     
@@ -60,10 +71,31 @@ def filtrarPais(path, pais):
         if f_in != None: f_in.close()
         if f_out != None: f_out.close()
     
+def calcularImportePais(path, pais):
+    # Las lineas de un país, partirlas e ir sumando el importe:
+    f=None
+    suma=0
+    try:
+        f = open(path, 'r')
+        f.readline()
+        for linea in f:
+            linea = linea.rstrip()
+            if pais in linea:
+                L = linea.split(";")
+                suma += float(L[4])
+        print('Suma de',pais,':', suma)
+        
+    except Exception as e:
+        print("ERROR: ", e)
+
+    finally:
+        if f != None: f.close()
 
 if __name__ == '__main__':
     #parametros()
-    filtrarPais('ficheros/Pedidos.txt', 'Alemania')
+    #filtrarPais('ficheros/Pedidos.txt', 'Alemania')
+    carga()
+    #calcularImportePais('ficheros/Pedidos.txt', 'Alemania')
     """
     leerFichero(sys.argv[0])
     leerFichero('ficheros/Pedidos.txt')

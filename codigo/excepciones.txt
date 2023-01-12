@@ -1,0 +1,19 @@
+try:
+	abrirFichero() -> ok
+	leerFichero() -> error
+	cerrarFichero()
+except:
+	pass
+
+#############################
+
+f=None
+try:
+	f=abrirFichero() -> error
+	leerFichero() 
+	
+except:
+	pass
+finally:
+	if f != None: cerrarFichero()
+
