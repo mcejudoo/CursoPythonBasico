@@ -2,7 +2,7 @@
 Expresiones regulares con Python
 """
 
-import re
+import re, string
 
 def validar(patron, cadena):
     return True if re.match(patron, cadena) else False
@@ -40,9 +40,14 @@ print(hh,mm,ss)
 
 # Pruebas con matriculas europeas: 2345GGT:
 print('Matriculas:')
-L = []
-patron = r""
-R = [validar(patron, i) for i in L]
+L = ['1234DRF','12FFF','WWW4567','1234RRE','4455GTH','1244AED']
+#consonantes = "[" + "".join([i for i in string.ascii_uppercase if i not in "AEIOU"]) + "]"
+#print(consonantes)
+#patron = r"\d{4}" + consonantes + "{3}$"
+patron = r"\d{4}[A-Z]{3}"
+patron2 = r"\d{4}[^AEIOU]{3}"
+print(patron)
+R = [validar(patron, i) and validar(patron2, i) for i in L]
 print(L)
 print(R)
 
