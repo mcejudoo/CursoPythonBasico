@@ -1,5 +1,6 @@
 import sqlite3 as dbapi
 from os.path import isfile
+
 class Empleado:
 
     def __init__(self, id=0, nombre="",cargo=""):
@@ -9,6 +10,12 @@ class Empleado:
     
     def __str__(self):
         return str(self.id)+" "+self.nombre+" "+self.cargo
+
+    def getTuple(self):
+        return self.id, self.nombre, self.cargo
+
+    def getTuple2(self):
+        return self.nombre, self.cargo, self.id
 
 class BaseDatos:
     """
@@ -33,9 +40,33 @@ class BaseDatos:
         self.cur.execute(sql, (id,))
         t = self.cur.fetchone()
         if t is None:
-            raise ValueError(str(id)+' no se encuentra en la BD')
+            raise ValueError('El id: '+str(id)+' no se encuentra en la BD')
         else:
             return Empleado(*t)
+
+    def __grabar(self, sql, t):
+        try:
+            self.cur.execute(sql, t)
+            self.conexion.commit()  # Confirmar los datos
+
+        except Exception as e:
+            self.conexion.rollback()
+            raise e
+
+    def create(self, empleado):
+        sql = "insert into empleados(id,nombre,cargo) values(?,?,?)"
+        t = empleado.getTuple()
+        self.__grabar(sql, t)
+
+    def delete(self, id):
+        sql = "delete from empleados where id=?"
+        t = (id,)
+        self.__grabar(sql, t)
+
+    def update(self, empleado):
+        sql = "update empleados set nombre=?, cargo=? where id=?"
+        t = empleado.getTuple2()
+        self.__grabar(sql, t)
 
     
     def select(self, cargo=None):
@@ -66,6 +97,9 @@ if __name__ == '__main__':
         L = bd.select("ventas")
         for e in L:
             print(e)
+
+        emp = bd.read(1)
+        print('emp 1: ', emp)
 
     except Exception as e:
         print("ERROR: ", e)
