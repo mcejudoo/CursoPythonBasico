@@ -1,0 +1,833 @@
+idpedido;idcliente;nombreCliente;nombreEmpresa;nombreEmpleado;importe;pais
+9999;A1234;A1234;Speedy Express;Davolio;99,0;USA
+10248;WILMK;Wilman Kala;Federal Shipping;Buchanan;32,38;Finlandia
+10249;TOMSP;Toms Spezialitaten;Speedy Express;Suyama;11,61;Alemania
+10250;HANAR;Hanari Carnes;United Package;Peacock;65,83;Brasil
+10251;VICTE;Victuailles en stock;Speedy Express;Leverling;41,34;Francia
+10252;SUPRD;Supremes delices;United Package;Peacock;51,3;Belgica
+10253;HANAR;Hanari Carnes;United Package;Leverling;58,17;Brasil
+10254;CHOPS;Chop-suey Chinese;United Package;Buchanan;22,98;Suiza
+10255;RICSU;Richter Supermarkt;Federal Shipping;Dodsworth;148,33;Suiza
+10256;WELLI;Wellington Importadora;United Package;Leverling;13,97;Brasil
+10257;HILAA;HILARIoN-Abastos;Federal Shipping;Peacock;81,91;Venezuela
+10258;ERNSH;Ernst Handel;Speedy Express;Davolio;140,51;Austria
+10259;CENTC;Centro comercial Moctezuma;Federal Shipping;Peacock;3,25;Mexico
+10260;OTTIK;Ottilies Kaseladen;Speedy Express;Peacock;55,09;Alemania
+10261;QUEDE;Que Delicia;United Package;Peacock;3,05;Brasil
+10262;RATTC;Rattlesnake Canyon Grocery;Federal Shipping;Callahan;48,29;Estados Unidos
+10263;ERNSH;Ernst Handel;Federal Shipping;Dodsworth;146,06;Austria
+10264;FOLKO;Folk och fa HB;Federal Shipping;Suyama;3,67;Suecia
+10265;BLONP;Blondel pere et fils;Speedy Express;Fuller;55,28;Francia
+10266;WARTH;Wartian Herkku;Federal Shipping;Leverling;25,73;Finlandia
+10267;FRANK;Frankenversand;Speedy Express;Peacock;208,58;Alemania
+10268;GROSR;GROSELLA-Restaurante;Federal Shipping;Callahan;66,29;Venezuela
+10269;WHITC;White Clover Markets;Speedy Express;Buchanan;4,56;Estados Unidos
+10270;WARTH;Wartian Herkku;Speedy Express;Davolio;136,54;Finlandia
+10271;SPLIR;Split Rail Beer & Ale;United Package;Suyama;4,54;Estados Unidos
+10272;RATTC;Rattlesnake Canyon Grocery;United Package;Suyama;98,03;Estados Unidos
+10273;QUICK;QUICK-Stop;Federal Shipping;Leverling;76,07;Alemania
+10274;VINET;Vins et alcools Chevalier;Speedy Express;Suyama;6,01;Francia
+10275;MAGAA;Magazzini Alimentari Riuniti;Speedy Express;Davolio;26,93;Italia
+10276;TORTU;Tortuga Restaurante;Federal Shipping;Callahan;13,84;Mexico
+10277;MORGK;Morgenstern Gesundkost;Federal Shipping;Fuller;125,77;Alemania
+10278;BERGS;Berglunds snabbkop;United Package;Callahan;92,69;Suecia
+10279;LEHMS;Lehmanns Marktstand;United Package;Callahan;25,83;Alemania
+10280;BERGS;Berglunds snabbkop;Speedy Express;Fuller;8,98;Suecia
+10281;ROMEY;Romero y tomillo;Speedy Express;Peacock;2,94;Espanya
+10282;ROMEY;Romero y tomillo;Speedy Express;Peacock;12,69;Espanya
+10283;LILAS;LILA-Supermercado;Federal Shipping;Leverling;84,81;Venezuela
+10284;LEHMS;Lehmanns Marktstand;Speedy Express;Peacock;76,56;Alemania
+10285;QUICK;QUICK-Stop;United Package;Davolio;76,83;Alemania
+10286;QUICK;QUICK-Stop;Federal Shipping;Callahan;229,24;Alemania
+10287;RICAR;Ricardo Adocicados;Federal Shipping;Callahan;12,76;Brasil
+10288;REGGC;Reggiani Caseifici;Speedy Express;Peacock;7,45;Italia
+10289;BSBEV;B's Beverages;Federal Shipping;King;22,77;Reino Unido
+10290;COMMI;Comercio Mineiro;Speedy Express;Callahan;79,7;Brasil
+10291;QUEDE;Que Delicia;United Package;Suyama;6,4;Brasil
+10292;TRADH;Tradicao Hipermercados;United Package;Davolio;1,35;Brasil
+10293;TORTU;Tortuga Restaurante;Federal Shipping;Davolio;21,18;Mexico
+10294;RATTC;Rattlesnake Canyon Grocery;United Package;Peacock;147,26;Estados Unidos
+10295;VINET;Vins et alcools Chevalier;United Package;Fuller;1,15;Francia
+10296;LILAS;LILA-Supermercado;Speedy Express;Suyama;0,12;Venezuela
+10297;BLONP;Blondel pere et fils;United Package;Buchanan;5,74;Francia
+10298;HUNGO;Hungry Owl All-Night Grocers;United Package;Suyama;168,22;Irlanda
+10299;RICAR;Ricardo Adocicados;United Package;Peacock;29,76;Brasil
+10300;MAGAA;Magazzini Alimentari Riuniti;United Package;Fuller;17,68;Italia
+10301;WANDK;Die Wandernde Kuh;United Package;Callahan;45,08;Alemania
+10302;SUPRD;Supremes delices;United Package;Peacock;6,27;Belgica
+10303;GODOS;Godos Cocina Tipica;United Package;King;107,83;Espanya
+10304;TORTU;Tortuga Restaurante;United Package;Davolio;63,79;Mexico
+10305;OLDWO;Old World Delicatessen;Federal Shipping;Callahan;257,62;Estados Unidos
+10306;ROMEY;Romero y tomillo;Federal Shipping;Davolio;7,56;Espanya
+10307;LONEP;Lonesome Pine Restaurant;United Package;Fuller;0,56;Estados Unidos
+10308;ANATR;Ana Trujillo Emparedados y helados;Federal Shipping;King;1,61;Mexico
+10309;HUNGO;Hungry Owl All-Night Grocers;Speedy Express;Leverling;47,3;Irlanda
+10310;THEBI;The Big Cheese;United Package;Callahan;17,52;Estados Unidos
+10311;DUMON;Du monde entier;Federal Shipping;Davolio;24,69;Francia
+10312;WANDK;Die Wandernde Kuh;United Package;Fuller;40,26;Alemania
+10313;QUICK;QUICK-Stop;United Package;Fuller;1,96;Alemania
+10314;RATTC;Rattlesnake Canyon Grocery;United Package;Davolio;74,16;Estados Unidos
+10315;ISLAT;Island Trading;United Package;Peacock;41,76;Reino Unido
+10316;RATTC;Rattlesnake Canyon Grocery;Federal Shipping;Davolio;150,15;Estados Unidos
+10317;LONEP;Lonesome Pine Restaurant;Speedy Express;Suyama;12,69;Estados Unidos
+10318;ISLAT;Island Trading;United Package;Callahan;4,73;Reino Unido
+10319;TORTU;Tortuga Restaurante;Federal Shipping;King;64,5;Mexico
+10320;WARTH;Wartian Herkku;Federal Shipping;Buchanan;34,57;Finlandia
+10321;ISLAT;Island Trading;United Package;Leverling;3,43;Reino Unido
+10322;PERIC;Pericles Comidas clasicas;Federal Shipping;King;0,4;Mexico
+10323;KOENE;Koniglich Essen;Speedy Express;Peacock;4,88;Alemania
+10324;SAVEA;Save-a-lot Markets;Speedy Express;Dodsworth;214,27;Estados Unidos
+10325;KOENE;Koniglich Essen;Federal Shipping;Davolio;64,86;Alemania
+10326;BOLID;Bolido Comidas preparadas;United Package;Peacock;77,92;Espanya
+10327;FOLKO;Folk och fa HB;Speedy Express;Fuller;63,36;Suecia
+10328;FURIB;Furia Bacalhau e Frutos do Mar;Federal Shipping;Peacock;87,03;Portugal
+10329;SPLIR;Split Rail Beer & Ale;United Package;Peacock;191,67;Estados Unidos
+10330;LILAS;LILA-Supermercado;Speedy Express;Leverling;12,75;Venezuela
+10331;BONAP;Bon app';Speedy Express;Dodsworth;10,19;Francia
+10332;MEREP;Mere Paillarde;United Package;Leverling;52,84;Canada
+10333;WARTH;Wartian Herkku;Federal Shipping;Buchanan;0,59;Finlandia
+10334;VICTE;Victuailles en stock;United Package;Callahan;8,56;Francia
+10335;HUNGO;Hungry Owl All-Night Grocers;United Package;King;42,11;Irlanda
+10336;PRINI;Princesa Isabel Vinhos;United Package;King;15,51;Portugal
+10337;FRANK;Frankenversand;Federal Shipping;Peacock;108,26;Alemania
+10338;OLDWO;Old World Delicatessen;Federal Shipping;Peacock;84,21;Estados Unidos
+10339;MEREP;Mere Paillarde;United Package;Fuller;15,66;Canada
+10340;BONAP;Bon app';Federal Shipping;Davolio;166,31;Francia
+10341;SIMOB;Simons bistro;Federal Shipping;King;26,78;Dinamarca
+10342;FRANK;Frankenversand;United Package;Peacock;54,83;Alemania
+10343;LEHMS;Lehmanns Marktstand;Speedy Express;Peacock;110,37;Alemania
+10344;WHITC;White Clover Markets;United Package;Peacock;23,29;Estados Unidos
+10345;QUICK;QUICK-Stop;United Package;Fuller;249,06;Alemania
+10346;RATTC;Rattlesnake Canyon Grocery;Federal Shipping;Leverling;142,08;Estados Unidos
+10347;FAMIA;Familia Arquibaldo;Federal Shipping;Peacock;3,1;Brasil
+10348;WANDK;Die Wandernde Kuh;United Package;Peacock;0,78;Alemania
+10349;SPLIR;Split Rail Beer & Ale;Speedy Express;King;8,63;Estados Unidos
+10350;LAMAI;La maison d'Asie;United Package;Suyama;64,19;Francia
+10351;ERNSH;Ernst Handel;Speedy Express;Davolio;162,33;Austria
+10352;FURIB;Furia Bacalhau e Frutos do Mar;Federal Shipping;Leverling;1,3;Portugal
+10353;PICCO;Piccolo und mehr;Federal Shipping;King;360,63;Austria
+10354;PERIC;Pericles Comidas clasicas;Federal Shipping;Callahan;53,8;Mexico
+10355;AROUT;Around the Horn;Speedy Express;Suyama;41,95;Reino Unido
+10356;WANDK;Die Wandernde Kuh;United Package;Suyama;36,71;Alemania
+10357;LILAS;LILA-Supermercado;Federal Shipping;Davolio;34,88;Venezuela
+10358;LAMAI;La maison d'Asie;Speedy Express;Buchanan;19,64;Francia
+10359;SEVES;Seven Seas Imports;Federal Shipping;Buchanan;288,43;Reino Unido
+10360;BLONP;Blondel pere et fils;Federal Shipping;Peacock;131,7;Francia
+10361;QUICK;QUICK-Stop;United Package;Davolio;183,17;Alemania
+10362;BONAP;Bon app';Speedy Express;Leverling;96,04;Francia
+10363;DRACD;Drachenblut Delikatessen;Federal Shipping;Peacock;30,54;Alemania
+10364;EASTC;Eastern Connection;Speedy Express;Davolio;71,97;Reino Unido
+10365;ANTON;Antonio Moreno Taqueria;United Package;Leverling;22,0;Mexico
+10366;GALED;Galeria del gastronomo;United Package;Callahan;10,14;Espanya
+10367;VAFFE;Vaffeljernet;Federal Shipping;King;13,55;Dinamarca
+10368;ERNSH;Ernst Handel;United Package;Fuller;101,95;Austria
+10369;SPLIR;Split Rail Beer & Ale;United Package;Callahan;195,68;Estados Unidos
+10370;CHOPS;Chop-suey Chinese;United Package;Suyama;1,17;Suiza
+10371;LAMAI;La maison d'Asie;Speedy Express;Davolio;0,45;Francia
+10372;QUEEN;Queen Cozinha;United Package;Buchanan;890,78;Brasil
+10373;HUNGO;Hungry Owl All-Night Grocers;Federal Shipping;Peacock;124,12;Irlanda
+10374;WOLZA;Wolski  Zajazd;Federal Shipping;Davolio;3,94;Polonia
+10375;HUNGC;Hungry Coyote Import Store;United Package;Leverling;20,12;Estados Unidos
+10376;MEREP;Mere Paillarde;United Package;Davolio;20,39;Canada
+10377;SEVES;Seven Seas Imports;Federal Shipping;Davolio;22,21;Reino Unido
+10378;FOLKO;Folk och fa HB;Federal Shipping;Buchanan;5,44;Suecia
+10379;QUEDE;Que Delicia;Speedy Express;Fuller;45,03;Brasil
+10380;HUNGO;Hungry Owl All-Night Grocers;Federal Shipping;Callahan;35,03;Irlanda
+10381;LILAS;LILA-Supermercado;Federal Shipping;Leverling;7,99;Venezuela
+10382;ERNSH;Ernst Handel;Speedy Express;Peacock;94,77;Austria
+10383;AROUT;Around the Horn;Federal Shipping;Callahan;34,24;Reino Unido
+10384;BERGS;Berglunds snabbkop;Federal Shipping;Leverling;168,64;Suecia
+10385;SPLIR;Split Rail Beer & Ale;United Package;Davolio;30,96;Estados Unidos
+10386;FAMIA;Familia Arquibaldo;Federal Shipping;Dodsworth;13,99;Brasil
+10387;SANTG;Sante Gourmet;United Package;Davolio;93,63;Noruega
+10388;SEVES;Seven Seas Imports;Speedy Express;Fuller;34,86;Reino Unido
+10389;BOTTM;Bottom-Dollar Markets;United Package;Peacock;47,42;Canada
+10390;ERNSH;Ernst Handel;Speedy Express;Suyama;126,38;Austria
+10391;DRACD;Drachenblut Delikatessen;Federal Shipping;Leverling;5,45;Alemania
+10392;PICCO;Piccolo und mehr;Federal Shipping;Fuller;122,46;Austria
+10393;SAVEA;Save-a-lot Markets;Federal Shipping;Davolio;126,56;Estados Unidos
+10394;HUNGC;Hungry Coyote Import Store;Federal Shipping;Davolio;30,34;Estados Unidos
+10395;HILAA;HILARIoN-Abastos;Speedy Express;Suyama;184,41;Venezuela
+10396;FRANK;Frankenversand;Federal Shipping;Davolio;135,35;Alemania
+10397;PRINI;Princesa Isabel Vinhos;Speedy Express;Buchanan;60,26;Portugal
+10398;SAVEA;Save-a-lot Markets;Federal Shipping;Fuller;89,16;Estados Unidos
+10399;VAFFE;Vaffeljernet;Federal Shipping;Callahan;27,36;Dinamarca
+10400;EASTC;Eastern Connection;Federal Shipping;Davolio;83,93;Reino Unido
+10401;RATTC;Rattlesnake Canyon Grocery;Speedy Express;Davolio;12,51;Estados Unidos
+10402;ERNSH;Ernst Handel;United Package;Callahan;67,88;Austria
+10403;ERNSH;Ernst Handel;Federal Shipping;Peacock;73,79;Austria
+10404;MAGAA;Magazzini Alimentari Riuniti;Speedy Express;Fuller;155,97;Italia
+10405;LINOD;LINO-Delicateses;Speedy Express;Davolio;34,82;Venezuela
+10406;QUEEN;Queen Cozinha;Speedy Express;King;108,04;Brasil
+10407;OTTIK;Ottilies Kaseladen;United Package;Fuller;91,48;Alemania
+10408;FOLIG;Folies gourmandes;Speedy Express;Callahan;11,26;Francia
+10409;OCEAN;Oceano Atlantico Ltda.;Speedy Express;Leverling;29,83;Argentina
+10410;BOTTM;Bottom-Dollar Markets;Federal Shipping;Leverling;2,4;Canada
+10411;BOTTM;Bottom-Dollar Markets;Federal Shipping;Dodsworth;23,65;Canada
+10412;WARTH;Wartian Herkku;United Package;Callahan;3,77;Finlandia
+10413;LAMAI;La maison d'Asie;United Package;Leverling;95,66;Francia
+10414;FAMIA;Familia Arquibaldo;Federal Shipping;Fuller;21,48;Brasil
+10415;HUNGC;Hungry Coyote Import Store;Speedy Express;Leverling;0,2;Estados Unidos
+10416;WARTH;Wartian Herkku;Federal Shipping;Callahan;22,72;Finlandia
+10417;SIMOB;Simons bistro;Federal Shipping;Peacock;70,29;Dinamarca
+10418;QUICK;QUICK-Stop;Speedy Express;Peacock;17,55;Alemania
+10419;RICSU;Richter Supermarkt;United Package;Peacock;137,35;Suiza
+10420;WELLI;Wellington Importadora;Speedy Express;Leverling;44,12;Brasil
+10421;QUEDE;Que Delicia;Speedy Express;Callahan;99,23;Brasil
+10422;FRANS;Franchi S.p.A.;Speedy Express;Fuller;3,02;Italia
+10423;GOURL;Gourmet Lanchonetes;Federal Shipping;Suyama;24,5;Brasil
+10424;MEREP;Mere Paillarde;United Package;King;370,61;Canada
+10425;LAMAI;La maison d'Asie;United Package;Suyama;7,93;Francia
+10426;GALED;Galeria del gastronomo;Speedy Express;Peacock;18,69;Espanya
+10427;PICCO;Piccolo und mehr;United Package;Peacock;31,29;Austria
+10428;REGGC;Reggiani Caseifici;Speedy Express;King;11,09;Italia
+10429;HUNGO;Hungry Owl All-Night Grocers;United Package;Leverling;56,63;Irlanda
+10430;ERNSH;Ernst Handel;Speedy Express;Peacock;458,78;Austria
+10431;BOTTM;Bottom-Dollar Markets;United Package;Peacock;44,17;Canada
+10432;SPLIR;Split Rail Beer & Ale;United Package;Leverling;4,34;Estados Unidos
+10433;PRINI;Princesa Isabel Vinhos;Federal Shipping;Leverling;73,83;Portugal
+10434;FOLKO;Folk och fa HB;United Package;Leverling;17,92;Suecia
+10435;CONSH;Consolidated Holdings;United Package;Callahan;9,21;Reino Unido
+10436;BLONP;Blondel pere et fils;United Package;Leverling;156,66;Francia
+10437;WARTH;Wartian Herkku;Speedy Express;Callahan;19,97;Finlandia
+10438;TOMSP;Toms Spezialitaten;United Package;Leverling;8,24;Alemania
+10439;MEREP;Mere Paillarde;Federal Shipping;Suyama;4,07;Canada
+10440;SAVEA;Save-a-lot Markets;United Package;Peacock;86,53;Estados Unidos
+10441;OLDWO;Old World Delicatessen;United Package;Leverling;73,02;Estados Unidos
+10442;ERNSH;Ernst Handel;United Package;Leverling;47,94;Austria
+10443;REGGC;Reggiani Caseifici;Speedy Express;Callahan;13,95;Italia
+10444;BERGS;Berglunds snabbkop;Federal Shipping;Leverling;3,5;Suecia
+10445;BERGS;Berglunds snabbkop;Speedy Express;Leverling;9,3;Suecia
+10446;TOMSP;Toms Spezialitaten;Speedy Express;Suyama;14,68;Alemania
+10447;RICAR;Ricardo Adocicados;United Package;Peacock;68,66;Brasil
+10448;RANCH;Rancho grande;United Package;Peacock;38,82;Argentina
+10449;BLONP;Blondel pere et fils;United Package;Leverling;53,3;Francia
+10450;VICTE;Victuailles en stock;United Package;Callahan;7,23;Francia
+10451;QUICK;QUICK-Stop;Federal Shipping;Peacock;189,09;Alemania
+10452;SAVEA;Save-a-lot Markets;Speedy Express;Callahan;140,26;Estados Unidos
+10453;AROUT;Around the Horn;United Package;Davolio;25,36;Reino Unido
+10454;LAMAI;La maison d'Asie;Federal Shipping;Peacock;2,74;Francia
+10455;WARTH;Wartian Herkku;United Package;Callahan;180,45;Finlandia
+10456;KOENE;Koniglich Essen;United Package;Callahan;8,12;Alemania
+10457;KOENE;Koniglich Essen;Speedy Express;Fuller;11,57;Alemania
+10458;SUPRD;Supremes delices;Federal Shipping;King;147,06;Belgica
+10459;VICTE;Victuailles en stock;United Package;Peacock;25,09;Francia
+10460;FOLKO;Folk och fa HB;Speedy Express;Callahan;16,27;Suecia
+10461;LILAS;LILA-Supermercado;Federal Shipping;Davolio;148,61;Venezuela
+10462;CONSH;Consolidated Holdings;Speedy Express;Fuller;6,17;Reino Unido
+10463;SUPRD;Supremes delices;Federal Shipping;Buchanan;14,78;Belgica
+10464;FURIB;Furia Bacalhau e Frutos do Mar;United Package;Peacock;89,0;Portugal
+10465;VAFFE;Vaffeljernet;Federal Shipping;Davolio;145,04;Dinamarca
+10466;COMMI;Comercio Mineiro;Speedy Express;Peacock;11,93;Brasil
+10467;MAGAA;Magazzini Alimentari Riuniti;United Package;Callahan;4,93;Italia
+10468;KOENE;Koniglich Essen;Federal Shipping;Leverling;44,12;Alemania
+10469;WHITC;White Clover Markets;Speedy Express;Davolio;60,18;Estados Unidos
+10470;BONAP;Bon app';United Package;Peacock;64,56;Francia
+10471;BSBEV;B's Beverages;Federal Shipping;Fuller;45,59;Reino Unido
+10472;SEVES;Seven Seas Imports;Speedy Express;Callahan;4,2;Reino Unido
+10473;ISLAT;Island Trading;Federal Shipping;Davolio;16,37;Reino Unido
+10474;PERIC;Pericles Comidas clasicas;United Package;Buchanan;83,49;Mexico
+10475;SUPRD;Supremes delices;Speedy Express;Dodsworth;68,52;Belgica
+10476;HILAA;HILARIoN-Abastos;Federal Shipping;Callahan;4,41;Venezuela
+10477;PRINI;Princesa Isabel Vinhos;United Package;Buchanan;13,02;Portugal
+10478;VICTE;Victuailles en stock;Federal Shipping;Fuller;4,81;Francia
+10479;RATTC;Rattlesnake Canyon Grocery;Federal Shipping;Leverling;708,95;Estados Unidos
+10480;FOLIG;Folies gourmandes;United Package;Suyama;1,35;Francia
+10481;RICAR;Ricardo Adocicados;United Package;Callahan;64,33;Brasil
+10482;LAZYK;Lazy K Kountry Store;Federal Shipping;Davolio;7,48;Estados Unidos
+10483;WHITC;White Clover Markets;United Package;King;15,28;Estados Unidos
+10484;BSBEV;B's Beverages;Federal Shipping;Leverling;6,88;Reino Unido
+10485;LINOD;LINO-Delicateses;United Package;Peacock;64,45;Venezuela
+10486;HILAA;HILARIoN-Abastos;United Package;Davolio;30,53;Venezuela
+10487;QUEEN;Queen Cozinha;United Package;Fuller;71,07;Brasil
+10488;FRANK;Frankenversand;United Package;Callahan;4,93;Alemania
+10489;PICCO;Piccolo und mehr;United Package;Suyama;5,29;Austria
+10490;HILAA;HILARIoN-Abastos;United Package;King;210,19;Venezuela
+10491;FURIB;Furia Bacalhau e Frutos do Mar;Federal Shipping;Callahan;16,96;Portugal
+10492;BOTTM;Bottom-Dollar Markets;Speedy Express;Leverling;62,89;Canada
+10493;LAMAI;La maison d'Asie;Federal Shipping;Peacock;10,64;Francia
+10494;COMMI;Comercio Mineiro;United Package;Peacock;65,99;Brasil
+10495;LAUGB;Laughing Bacchus Wine Cellars;Federal Shipping;Leverling;4,65;Canada
+10496;TRADH;Tradicao Hipermercados;United Package;King;46,77;Brasil
+10497;LEHMS;Lehmanns Marktstand;Speedy Express;King;36,21;Alemania
+10498;HILAA;HILARIoN-Abastos;United Package;Callahan;29,75;Venezuela
+10499;LILAS;LILA-Supermercado;United Package;Peacock;102,02;Venezuela
+10500;LAMAI;La maison d'Asie;Speedy Express;Suyama;42,68;Francia
+10501;BLAUS;Blauer See Delikatessen;Federal Shipping;Dodsworth;8,85;Alemania
+10502;PERIC;Pericles Comidas clasicas;Speedy Express;Fuller;69,32;Mexico
+10503;HUNGO;Hungry Owl All-Night Grocers;United Package;Suyama;16,74;Irlanda
+10504;WHITC;White Clover Markets;Federal Shipping;Peacock;59,13;Estados Unidos
+10505;MEREP;Mere Paillarde;Federal Shipping;Leverling;7,13;Canada
+10506;KOENE;Koniglich Essen;United Package;Dodsworth;21,19;Alemania
+10507;ANTON;Antonio Moreno Taqueria;Speedy Express;King;47,45;Mexico
+10508;OTTIK;Ottilies Kaseladen;United Package;Davolio;4,99;Alemania
+10509;BLAUS;Blauer See Delikatessen;Speedy Express;Peacock;0,15;Alemania
+10510;SAVEA;Save-a-lot Markets;Federal Shipping;Suyama;367,63;Estados Unidos
+10511;BONAP;Bon app';Federal Shipping;Peacock;350,64;Francia
+10512;FAMIA;Familia Arquibaldo;United Package;King;3,53;Brasil
+10513;WANDK;Die Wandernde Kuh;Speedy Express;King;105,65;Alemania
+10514;ERNSH;Ernst Handel;United Package;Leverling;789,95;Austria
+10515;QUICK;QUICK-Stop;Speedy Express;Fuller;204,47;Alemania
+10516;HUNGO;Hungry Owl All-Night Grocers;Federal Shipping;Fuller;62,78;Irlanda
+10517;NORTS;North/South;Federal Shipping;Leverling;32,07;Reino Unido
+10518;TORTU;Tortuga Restaurante;United Package;Peacock;218,15;Mexico
+10519;CHOPS;Chop-suey Chinese;Federal Shipping;Suyama;91,76;Suiza
+10520;SANTG;Sante Gourmet;Speedy Express;King;13,37;Noruega
+10521;CACTU;Cactus Comidas para llevar;United Package;Callahan;17,22;Argentina
+10522;LEHMS;Lehmanns Marktstand;Speedy Express;Peacock;45,33;Alemania
+10523;SEVES;Seven Seas Imports;United Package;King;77,63;Reino Unido
+10524;BERGS;Berglunds snabbkop;United Package;Davolio;244,79;Suecia
+10525;BONAP;Bon app';United Package;Davolio;11,06;Francia
+10526;WARTH;Wartian Herkku;United Package;Peacock;58,59;Finlandia
+10527;QUICK;QUICK-Stop;Speedy Express;King;41,9;Alemania
+10528;GREAL;Great Lakes Food Market;United Package;Suyama;3,35;Estados Unidos
+10529;MAISD;Maison Dewey;United Package;Buchanan;66,69;Belgica
+10530;PICCO;Piccolo und mehr;United Package;Leverling;339,22;Austria
+10531;OCEAN;Oceano Atlantico Ltda.;Speedy Express;King;8,12;Argentina
+10532;EASTC;Eastern Connection;Federal Shipping;King;74,46;Reino Unido
+10533;FOLKO;Folk och fa HB;Speedy Express;Callahan;188,04;Suecia
+10534;LEHMS;Lehmanns Marktstand;United Package;Callahan;27,94;Alemania
+10535;ANTON;Antonio Moreno Taqueria;Speedy Express;Peacock;15,64;Mexico
+10536;LEHMS;Lehmanns Marktstand;United Package;Leverling;58,88;Alemania
+10537;RICSU;Richter Supermarkt;Speedy Express;Davolio;78,85;Suiza
+10538;BSBEV;B's Beverages;Federal Shipping;Dodsworth;4,87;Reino Unido
+10539;BSBEV;B's Beverages;Federal Shipping;Suyama;12,36;Reino Unido
+10540;QUICK;QUICK-Stop;Federal Shipping;Leverling;1007,64;Alemania
+10541;HANAR;Hanari Carnes;Speedy Express;Fuller;68,65;Brasil
+10542;KOENE;Koniglich Essen;Federal Shipping;Davolio;10,95;Alemania
+10543;LILAS;LILA-Supermercado;United Package;Callahan;48,17;Venezuela
+10544;LONEP;Lonesome Pine Restaurant;Speedy Express;Peacock;24,91;Estados Unidos
+10545;LAZYK;Lazy K Kountry Store;United Package;Callahan;11,92;Estados Unidos
+10546;VICTE;Victuailles en stock;Federal Shipping;Davolio;194,72;Francia
+10547;SEVES;Seven Seas Imports;United Package;Leverling;178,43;Reino Unido
+10548;TOMSP;Toms Spezialitaten;United Package;Leverling;1,43;Alemania
+10549;QUICK;QUICK-Stop;Speedy Express;Buchanan;171,24;Alemania
+10550;GODOS;Godos Cocina Tipica;Federal Shipping;King;4,32;Espanya
+10551;FURIB;Furia Bacalhau e Frutos do Mar;Federal Shipping;Peacock;72,95;Portugal
+10552;HILAA;HILARIoN-Abastos;Speedy Express;Fuller;83,22;Venezuela
+10553;WARTH;Wartian Herkku;United Package;Fuller;149,49;Finlandia
+10554;OTTIK;Ottilies Kaseladen;Federal Shipping;Peacock;120,97;Alemania
+10555;SAVEA;Save-a-lot Markets;Federal Shipping;Suyama;252,49;Estados Unidos
+10556;SIMOB;Simons bistro;Speedy Express;Fuller;9,8;Dinamarca
+10557;LEHMS;Lehmanns Marktstand;United Package;Dodsworth;96,72;Alemania
+10558;AROUT;Around the Horn;United Package;Davolio;72,97;Reino Unido
+10559;BLONP;Blondel pere et fils;Speedy Express;Suyama;8,05;Francia
+10560;FRANK;Frankenversand;Speedy Express;Callahan;36,65;Alemania
+10561;FOLKO;Folk och fa HB;United Package;Fuller;242,21;Suecia
+10562;REGGC;Reggiani Caseifici;Speedy Express;Davolio;22,95;Italia
+10563;RICAR;Ricardo Adocicados;United Package;Fuller;60,43;Brasil
+10564;RATTC;Rattlesnake Canyon Grocery;Federal Shipping;Peacock;13,75;Estados Unidos
+10565;MEREP;Mere Paillarde;United Package;Callahan;7,15;Canada
+10566;BLONP;Blondel pere et fils;Speedy Express;Dodsworth;88,4;Francia
+10567;HUNGO;Hungry Owl All-Night Grocers;Speedy Express;Davolio;33,97;Irlanda
+10568;GALED;Galeria del gastronomo;Federal Shipping;Leverling;6,54;Espanya
+10569;RATTC;Rattlesnake Canyon Grocery;Speedy Express;Buchanan;58,98;Estados Unidos
+10570;MEREP;Mere Paillarde;Federal Shipping;Leverling;188,99;Canada
+10571;ERNSH;Ernst Handel;Federal Shipping;Callahan;26,06;Austria
+10572;BERGS;Berglunds snabbkop;United Package;Leverling;116,43;Suecia
+10573;ANTON;Antonio Moreno Taqueria;Federal Shipping;King;84,84;Mexico
+10574;TRAIH;Trail's Head Gourmet Provisioners;United Package;Peacock;37,6;Estados Unidos
+10575;MORGK;Morgenstern Gesundkost;Speedy Express;Buchanan;127,34;Alemania
+10576;TORTU;Tortuga Restaurante;Federal Shipping;Leverling;18,56;Mexico
+10577;TRAIH;Trail's Head Gourmet Provisioners;United Package;Dodsworth;25,41;Estados Unidos
+10578;BSBEV;B's Beverages;Federal Shipping;Peacock;29,6;Reino Unido
+10579;LETSS;Let's Stop N Shop;United Package;Davolio;13,73;Estados Unidos
+10580;OTTIK;Ottilies Kaseladen;Federal Shipping;Peacock;75,89;Alemania
+10581;FAMIA;Familia Arquibaldo;Speedy Express;Leverling;3,01;Brasil
+10582;BLAUS;Blauer See Delikatessen;United Package;Leverling;27,71;Alemania
+10583;WARTH;Wartian Herkku;United Package;Fuller;7,28;Finlandia
+10584;BLONP;Blondel pere et fils;Speedy Express;Peacock;59,14;Francia
+10585;WELLI;Wellington Importadora;Speedy Express;King;13,41;Brasil
+10586;REGGC;Reggiani Caseifici;Speedy Express;Dodsworth;0,48;Italia
+10587;QUEDE;Que Delicia;Speedy Express;Davolio;62,52;Brasil
+10588;QUICK;QUICK-Stop;Federal Shipping;Fuller;194,67;Alemania
+10589;GREAL;Great Lakes Food Market;United Package;Callahan;4,42;Estados Unidos
+10590;MEREP;Mere Paillarde;Federal Shipping;Peacock;44,77;Canada
+10591;VAFFE;Vaffeljernet;Speedy Express;Davolio;55,92;Dinamarca
+10592;LEHMS;Lehmanns Marktstand;Speedy Express;Leverling;32,1;Alemania
+10593;LEHMS;Lehmanns Marktstand;United Package;King;174,2;Alemania
+10594;OLDWO;Old World Delicatessen;United Package;Leverling;5,24;Estados Unidos
+10595;ERNSH;Ernst Handel;Speedy Express;Fuller;96,78;Austria
+10596;WHITC;White Clover Markets;Speedy Express;Callahan;16,34;Estados Unidos
+10597;PICCO;Piccolo und mehr;Federal Shipping;King;35,12;Austria
+10598;RATTC;Rattlesnake Canyon Grocery;Federal Shipping;Davolio;44,42;Estados Unidos
+10599;BSBEV;B's Beverages;Federal Shipping;Suyama;29,98;Reino Unido
+10600;HUNGC;Hungry Coyote Import Store;Speedy Express;Peacock;45,13;Estados Unidos
+10601;HILAA;HILARIoN-Abastos;Speedy Express;King;58,3;Venezuela
+10602;VAFFE;Vaffeljernet;United Package;Callahan;2,92;Dinamarca
+10603;SAVEA;Save-a-lot Markets;United Package;Callahan;48,77;Estados Unidos
+10604;FURIB;Furia Bacalhau e Frutos do Mar;Speedy Express;Davolio;7,46;Portugal
+10605;MEREP;Mere Paillarde;United Package;Davolio;379,13;Canada
+10606;TRADH;Tradicao Hipermercados;Federal Shipping;Peacock;79,4;Brasil
+10607;SAVEA;Save-a-lot Markets;Speedy Express;Buchanan;200,24;Estados Unidos
+10608;TOMSP;Toms Spezialitaten;United Package;Peacock;27,79;Alemania
+10609;DUMON;Du monde entier;United Package;King;1,85;Francia
+10610;LAMAI;La maison d'Asie;Speedy Express;Callahan;26,78;Francia
+10611;WOLZA;Wolski  Zajazd;United Package;Suyama;80,65;Polonia
+10612;SAVEA;Save-a-lot Markets;United Package;Davolio;544,08;Estados Unidos
+10613;HILAA;HILARIoN-Abastos;United Package;Peacock;8,11;Venezuela
+10614;BLAUS;Blauer See Delikatessen;Federal Shipping;Callahan;1,93;Alemania
+10615;WILMK;Wilman Kala;Federal Shipping;Fuller;0,75;Finlandia
+10616;GREAL;Great Lakes Food Market;United Package;Davolio;116,53;Estados Unidos
+10617;GREAL;Great Lakes Food Market;United Package;Peacock;18,53;Estados Unidos
+10618;MEREP;Mere Paillarde;Speedy Express;Davolio;154,68;Canada
+10619;MEREP;Mere Paillarde;Federal Shipping;Leverling;91,05;Canada
+10620;LAUGB;Laughing Bacchus Wine Cellars;Federal Shipping;Fuller;0,94;Canada
+10621;ISLAT;Island Trading;United Package;Peacock;23,73;Reino Unido
+10622;RICAR;Ricardo Adocicados;Federal Shipping;Peacock;50,97;Brasil
+10623;FRANK;Frankenversand;United Package;Callahan;97,18;Alemania
+10624;THECR;The Cracker Box;United Package;Peacock;94,8;Estados Unidos
+10625;ANATR;Ana Trujillo Emparedados y helados;Speedy Express;Leverling;43,9;Mexico
+10626;BERGS;Berglunds snabbkop;United Package;Davolio;138,69;Suecia
+10627;SAVEA;Save-a-lot Markets;Federal Shipping;Callahan;107,46;Estados Unidos
+10628;BLONP;Blondel pere et fils;Federal Shipping;Peacock;30,36;Francia
+10629;GODOS;Godos Cocina Tipica;Federal Shipping;Peacock;85,46;Espanya
+10630;KOENE;Koniglich Essen;United Package;Davolio;32,35;Alemania
+10631;LAMAI;La maison d'Asie;Speedy Express;Callahan;0,87;Francia
+10632;WANDK;Die Wandernde Kuh;Speedy Express;Callahan;41,38;Alemania
+10633;ERNSH;Ernst Handel;Federal Shipping;King;477,9;Austria
+10634;FOLIG;Folies gourmandes;Federal Shipping;Peacock;487,38;Francia
+10635;MAGAA;Magazzini Alimentari Riuniti;Federal Shipping;Callahan;47,46;Italia
+10636;WARTH;Wartian Herkku;Speedy Express;Peacock;1,15;Finlandia
+10637;QUEEN;Queen Cozinha;Speedy Express;Suyama;201,29;Brasil
+10638;LINOD;LINO-Delicateses;Speedy Express;Leverling;158,44;Venezuela
+10639;SANTG;Sante Gourmet;Federal Shipping;King;38,64;Noruega
+10640;WANDK;Die Wandernde Kuh;Speedy Express;Peacock;23,55;Alemania
+10641;HILAA;HILARIoN-Abastos;United Package;Peacock;179,61;Venezuela
+10642;SIMOB;Simons bistro;Federal Shipping;King;41,89;Dinamarca
+10643;ALFKI;Alfreds Futterkiste;United Package;Suyama;29,46;Alemania
+10644;WELLI;Wellington Importadora;United Package;Leverling;0,14;Brasil
+10645;HANAR;Hanari Carnes;Speedy Express;Peacock;12,41;Brasil
+10646;HUNGO;Hungry Owl All-Night Grocers;Federal Shipping;Dodsworth;142,33;Irlanda
+10647;QUEDE;Que Delicia;United Package;Peacock;45,54;Brasil
+10648;RICAR;Ricardo Adocicados;United Package;Buchanan;14,25;Brasil
+10649;MAISD;Maison Dewey;Federal Shipping;Buchanan;6,2;Belgica
+10650;FAMIA;Familia Arquibaldo;Federal Shipping;Buchanan;176,81;Brasil
+10651;WANDK;Die Wandernde Kuh;United Package;Callahan;20,6;Alemania
+10652;GOURL;Gourmet Lanchonetes;United Package;Peacock;7,14;Brasil
+10653;FRANK;Frankenversand;Speedy Express;Davolio;93,25;Alemania
+10654;BERGS;Berglunds snabbkop;Speedy Express;Buchanan;55,26;Suecia
+10655;REGGC;Reggiani Caseifici;United Package;Davolio;4,41;Italia
+10656;GREAL;Great Lakes Food Market;Speedy Express;Suyama;57,15;Estados Unidos
+10657;SAVEA;Save-a-lot Markets;United Package;Fuller;352,69;Estados Unidos
+10658;QUICK;QUICK-Stop;Speedy Express;Peacock;364,15;Alemania
+10659;QUEEN;Queen Cozinha;United Package;King;105,81;Brasil
+10660;HUNGC;Hungry Coyote Import Store;Speedy Express;Callahan;111,29;Estados Unidos
+10661;HUNGO;Hungry Owl All-Night Grocers;Federal Shipping;King;17,55;Irlanda
+10662;LONEP;Lonesome Pine Restaurant;United Package;Leverling;1,28;Estados Unidos
+10663;BONAP;Bon app';United Package;Fuller;113,15;Francia
+10664;FURIB;Furia Bacalhau e Frutos do Mar;Federal Shipping;Davolio;1,27;Portugal
+10665;LONEP;Lonesome Pine Restaurant;United Package;Davolio;26,31;Estados Unidos
+10666;RICSU;Richter Supermarkt;United Package;King;232,42;Suiza
+10667;ERNSH;Ernst Handel;Speedy Express;King;78,09;Austria
+10668;WANDK;Die Wandernde Kuh;United Package;Davolio;47,22;Alemania
+10669;SIMOB;Simons bistro;Speedy Express;Fuller;24,39;Dinamarca
+10670;FRANK;Frankenversand;Speedy Express;Peacock;203,48;Alemania
+10671;FRANR;France restauration;Speedy Express;Davolio;30,34;Francia
+10672;BERGS;Berglunds snabbkop;United Package;Dodsworth;95,75;Suecia
+10673;WILMK;Wilman Kala;Speedy Express;Fuller;22,76;Finlandia
+10674;ISLAT;Island Trading;United Package;Peacock;0,9;Reino Unido
+10675;FRANK;Frankenversand;United Package;Buchanan;31,85;Alemania
+10676;TORTU;Tortuga Restaurante;United Package;Fuller;2,01;Mexico
+10677;ANTON;Antonio Moreno Taqueria;Federal Shipping;Davolio;4,03;Mexico
+10678;SAVEA;Save-a-lot Markets;Federal Shipping;King;388,98;Estados Unidos
+10679;BLONP;Blondel pere et fils;Federal Shipping;Callahan;27,94;Francia
+10680;OLDWO;Old World Delicatessen;Speedy Express;Davolio;26,61;Estados Unidos
+10681;GREAL;Great Lakes Food Market;Federal Shipping;Leverling;76,13;Estados Unidos
+10682;ANTON;Antonio Moreno Taqueria;United Package;Leverling;36,13;Mexico
+10683;DUMON;Du monde entier;Speedy Express;Fuller;4,4;Francia
+10684;OTTIK;Ottilies Kaseladen;Speedy Express;Leverling;145,63;Alemania
+10685;GOURL;Gourmet Lanchonetes;United Package;Peacock;33,75;Brasil
+10686;PICCO;Piccolo und mehr;Speedy Express;Fuller;96,5;Austria
+10687;HUNGO;Hungry Owl All-Night Grocers;United Package;Dodsworth;296,43;Irlanda
+10688;VAFFE;Vaffeljernet;United Package;Peacock;299,09;Dinamarca
+10689;BERGS;Berglunds snabbkop;United Package;Davolio;13,42;Suecia
+10690;HANAR;Hanari Carnes;Speedy Express;Davolio;15,8;Brasil
+10691;QUICK;QUICK-Stop;United Package;Fuller;810,05;Alemania
+10692;ALFKI;Alfreds Futterkiste;United Package;Peacock;61,02;Alemania
+10693;WHITC;White Clover Markets;Federal Shipping;Leverling;139,34;Estados Unidos
+10694;QUICK;QUICK-Stop;Federal Shipping;Callahan;398,36;Alemania
+10695;WILMK;Wilman Kala;Speedy Express;King;16,72;Finlandia
+10696;WHITC;White Clover Markets;Federal Shipping;Callahan;102,55;Estados Unidos
+10697;LINOD;LINO-Delicateses;Speedy Express;Leverling;45,52;Venezuela
+10698;ERNSH;Ernst Handel;Speedy Express;Peacock;272,47;Austria
+10699;MORGK;Morgenstern Gesundkost;Federal Shipping;Leverling;0,58;Alemania
+10700;SAVEA;Save-a-lot Markets;Speedy Express;Leverling;65,1;Estados Unidos
+10701;HUNGO;Hungry Owl All-Night Grocers;Federal Shipping;Suyama;220,31;Irlanda
+10702;ALFKI;Alfreds Futterkiste;Speedy Express;Peacock;23,94;Alemania
+10703;FOLKO;Folk och fa HB;United Package;Suyama;152,3;Suecia
+10704;QUEEN;Queen Cozinha;Speedy Express;Suyama;4,78;Brasil
+10705;HILAA;HILARIoN-Abastos;United Package;Dodsworth;3,52;Venezuela
+10706;OLDWO;Old World Delicatessen;Federal Shipping;Callahan;135,63;Estados Unidos
+10707;AROUT;Around the Horn;Federal Shipping;Peacock;21,74;Reino Unido
+10708;THEBI;The Big Cheese;United Package;Suyama;2,96;Estados Unidos
+10709;GOURL;Gourmet Lanchonetes;Federal Shipping;Davolio;210,8;Brasil
+10710;FRANS;Franchi S.p.A.;Speedy Express;Davolio;4,98;Italia
+10711;SAVEA;Save-a-lot Markets;United Package;Buchanan;52,41;Estados Unidos
+10712;HUNGO;Hungry Owl All-Night Grocers;Speedy Express;Leverling;89,93;Irlanda
+10713;SAVEA;Save-a-lot Markets;Speedy Express;Davolio;167,05;Estados Unidos
+10714;SAVEA;Save-a-lot Markets;Federal Shipping;Buchanan;24,49;Estados Unidos
+10715;BONAP;Bon app';Speedy Express;Leverling;63,2;Francia
+10716;RANCH;Rancho grande;United Package;Peacock;22,57;Argentina
+10717;FRANK;Frankenversand;United Package;Davolio;59,25;Alemania
+10718;KOENE;Koniglich Essen;Federal Shipping;Davolio;170,88;Alemania
+10719;LETSS;Let's Stop N Shop;United Package;Callahan;51,44;Estados Unidos
+10720;QUEDE;Que Delicia;United Package;Callahan;9,53;Brasil
+10721;QUICK;QUICK-Stop;Federal Shipping;Buchanan;48,92;Alemania
+10722;SAVEA;Save-a-lot Markets;Speedy Express;Callahan;74,58;Estados Unidos
+10723;WHITC;White Clover Markets;Speedy Express;Leverling;21,72;Estados Unidos
+10724;MEREP;Mere Paillarde;United Package;Callahan;57,75;Canada
+10725;FAMIA;Familia Arquibaldo;Federal Shipping;Peacock;10,83;Brasil
+10726;EASTC;Eastern Connection;Speedy Express;Peacock;16,56;Reino Unido
+10727;REGGC;Reggiani Caseifici;Speedy Express;Fuller;89,9;Italia
+10728;QUEEN;Queen Cozinha;United Package;Peacock;58,33;Brasil
+10729;LINOD;LINO-Delicateses;Federal Shipping;Callahan;141,06;Venezuela
+10730;BONAP;Bon app';Speedy Express;Buchanan;20,12;Francia
+10731;CHOPS;Chop-suey Chinese;Speedy Express;King;96,65;Suiza
+10732;BONAP;Bon app';Speedy Express;Leverling;16,97;Francia
+10733;BERGS;Berglunds snabbkop;Federal Shipping;Davolio;110,11;Suecia
+10734;GOURL;Gourmet Lanchonetes;Federal Shipping;Fuller;1,63;Brasil
+10735;LETSS;Let's Stop N Shop;United Package;Suyama;45,97;Estados Unidos
+10736;HUNGO;Hungry Owl All-Night Grocers;United Package;Dodsworth;44,1;Irlanda
+10737;VINET;Vins et alcools Chevalier;United Package;Fuller;7,79;Francia
+10738;SPECD;Specialites du monde;Speedy Express;Fuller;2,91;Francia
+10739;VINET;Vins et alcools Chevalier;Federal Shipping;Leverling;11,08;Francia
+10740;WHITC;White Clover Markets;United Package;Peacock;81,88;Estados Unidos
+10741;BERGS;Berglunds snabbkop;Federal Shipping;Peacock;10,96;Suecia
+10742;BOTTM;Bottom-Dollar Markets;Federal Shipping;Leverling;243,73;Canada
+10743;AROUT;Around the Horn;United Package;Davolio;23,72;Reino Unido
+10744;VAFFE;Vaffeljernet;Speedy Express;Suyama;69,19;Dinamarca
+10745;QUICK;QUICK-Stop;Speedy Express;Dodsworth;3,52;Alemania
+10746;CHOPS;Chop-suey Chinese;Federal Shipping;Davolio;31,43;Suiza
+10747;PICCO;Piccolo und mehr;Speedy Express;Suyama;117,33;Austria
+10748;SAVEA;Save-a-lot Markets;Speedy Express;Leverling;232,55;Estados Unidos
+10749;ISLAT;Island Trading;United Package;Peacock;61,53;Reino Unido
+10750;WARTH;Wartian Herkku;Speedy Express;Dodsworth;79,3;Finlandia
+10751;RICSU;Richter Supermarkt;Federal Shipping;Leverling;130,79;Suiza
+10752;NORTS;North/South;Federal Shipping;Fuller;1,39;Reino Unido
+10753;FRANS;Franchi S.p.A.;Speedy Express;Leverling;7,7;Italia
+10754;MAGAA;Magazzini Alimentari Riuniti;Federal Shipping;Suyama;2,38;Italia
+10755;BONAP;Bon app';United Package;Peacock;16,71;Francia
+10756;SPLIR;Split Rail Beer & Ale;United Package;Callahan;73,21;Estados Unidos
+10757;SAVEA;Save-a-lot Markets;Speedy Express;Suyama;8,19;Estados Unidos
+10758;RICSU;Richter Supermarkt;Federal Shipping;Leverling;138,17;Suiza
+10759;ANATR;Ana Trujillo Emparedados y helados;Federal Shipping;Leverling;11,99;Mexico
+10760;MAISD;Maison Dewey;Speedy Express;Peacock;155,64;Belgica
+10761;RATTC;Rattlesnake Canyon Grocery;United Package;Buchanan;18,66;Estados Unidos
+10762;FOLKO;Folk och fa HB;Speedy Express;Leverling;328,74;Suecia
+10763;FOLIG;Folies gourmandes;Federal Shipping;Leverling;37,35;Francia
+10764;ERNSH;Ernst Handel;Federal Shipping;Suyama;145,45;Austria
+10765;QUICK;QUICK-Stop;Federal Shipping;Leverling;42,74;Alemania
+10766;OTTIK;Ottilies Kaseladen;Speedy Express;Peacock;157,55;Alemania
+10767;SUPRD;Supremes delices;Federal Shipping;Peacock;1,59;Belgica
+10768;AROUT;Around the Horn;United Package;Leverling;146,32;Reino Unido
+10769;VAFFE;Vaffeljernet;Speedy Express;Leverling;65,06;Dinamarca
+10770;HANAR;Hanari Carnes;Federal Shipping;Callahan;5,32;Brasil
+10771;ERNSH;Ernst Handel;United Package;Dodsworth;11,19;Austria
+10772;LEHMS;Lehmanns Marktstand;United Package;Leverling;91,28;Alemania
+10773;ERNSH;Ernst Handel;Federal Shipping;Davolio;96,43;Austria
+10774;FOLKO;Folk och fa HB;Speedy Express;Peacock;48,2;Suecia
+10775;THECR;The Cracker Box;Speedy Express;King;20,25;Estados Unidos
+10776;ERNSH;Ernst Handel;Federal Shipping;Davolio;351,53;Austria
+10777;GOURL;Gourmet Lanchonetes;United Package;King;3,01;Brasil
+10778;BERGS;Berglunds snabbkop;Speedy Express;Leverling;6,79;Suecia
+10779;MORGK;Morgenstern Gesundkost;United Package;Leverling;58,13;Alemania
+10780;LILAS;LILA-Supermercado;Speedy Express;Fuller;42,13;Venezuela
+10781;WARTH;Wartian Herkku;Federal Shipping;Fuller;73,16;Finlandia
+10782;CACTU;Cactus Comidas para llevar;Federal Shipping;Dodsworth;1,1;Argentina
+10783;HANAR;Hanari Carnes;United Package;Peacock;124,98;Brasil
+10784;MAGAA;Magazzini Alimentari Riuniti;Federal Shipping;Peacock;70,09;Italia
+10785;GROSR;GROSELLA-Restaurante;Federal Shipping;Davolio;1,51;Venezuela
+10786;QUEEN;Queen Cozinha;Speedy Express;Callahan;110,87;Brasil
+10787;LAMAI;La maison d'Asie;Speedy Express;Fuller;249,93;Francia
+10788;QUICK;QUICK-Stop;United Package;Davolio;42,7;Alemania
+10789;FOLIG;Folies gourmandes;United Package;Davolio;100,6;Francia
+10790;GOURL;Gourmet Lanchonetes;Speedy Express;Suyama;28,23;Brasil
+10791;FRANK;Frankenversand;United Package;Suyama;16,85;Alemania
+10792;WOLZA;Wolski  Zajazd;Federal Shipping;Davolio;23,79;Polonia
+10793;AROUT;Around the Horn;Federal Shipping;Leverling;4,52;Reino Unido
+10794;QUEDE;Que Delicia;Speedy Express;Suyama;21,49;Brasil
+10795;ERNSH;Ernst Handel;United Package;Callahan;126,66;Austria
+10796;HILAA;HILARIoN-Abastos;Speedy Express;Leverling;26,52;Venezuela
+10797;DRACD;Drachenblut Delikatessen;United Package;King;33,35;Alemania
+10798;ISLAT;Island Trading;Speedy Express;Fuller;2,33;Reino Unido
+10799;KOENE;Koniglich Essen;Federal Shipping;Dodsworth;30,76;Alemania
+10800;SEVES;Seven Seas Imports;Federal Shipping;Davolio;137,44;Reino Unido
+10801;BOLID;Bolido Comidas preparadas;United Package;Peacock;97,09;Espanya
+10802;SIMOB;Simons bistro;United Package;Peacock;257,26;Dinamarca
+10803;WELLI;Wellington Importadora;Speedy Express;Peacock;55,23;Brasil
+10804;SEVES;Seven Seas Imports;United Package;Suyama;27,33;Reino Unido
+10805;THEBI;The Big Cheese;Federal Shipping;Fuller;237,34;Estados Unidos
+10806;VICTE;Victuailles en stock;United Package;Leverling;22,11;Francia
+10807;FRANS;Franchi S.p.A.;Speedy Express;Peacock;1,36;Italia
+10808;OLDWO;Old World Delicatessen;Federal Shipping;Fuller;45,53;Estados Unidos
+10809;WELLI;Wellington Importadora;Speedy Express;King;4,87;Brasil
+10810;LAUGB;Laughing Bacchus Wine Cellars;Federal Shipping;Fuller;4,33;Canada
+10811;LINOD;LINO-Delicateses;Speedy Express;Callahan;31,22;Venezuela
+10812;REGGC;Reggiani Caseifici;Speedy Express;Buchanan;59,78;Italia
+10813;RICAR;Ricardo Adocicados;Speedy Express;Davolio;47,38;Brasil
+10814;VICTE;Victuailles en stock;Federal Shipping;Leverling;130,94;Francia
+10815;SAVEA;Save-a-lot Markets;Federal Shipping;Fuller;14,62;Estados Unidos
+10816;GREAL;Great Lakes Food Market;United Package;Peacock;719,78;Estados Unidos
+10817;KOENE;Koniglich Essen;United Package;Leverling;306,07;Alemania
+10818;MAGAA;Magazzini Alimentari Riuniti;Federal Shipping;King;65,48;Italia
+10819;CACTU;Cactus Comidas para llevar;Federal Shipping;Fuller;19,76;Argentina
+10820;RATTC;Rattlesnake Canyon Grocery;United Package;Leverling;37,52;Estados Unidos
+10821;SPLIR;Split Rail Beer & Ale;Speedy Express;Davolio;36,68;Estados Unidos
+10822;TRAIH;Trail's Head Gourmet Provisioners;Federal Shipping;Suyama;7,0;Estados Unidos
+10823;LILAS;LILA-Supermercado;United Package;Buchanan;163,97;Venezuela
+10824;FOLKO;Folk och fa HB;Speedy Express;Callahan;1,23;Suecia
+10825;DRACD;Drachenblut Delikatessen;Speedy Express;Davolio;79,25;Alemania
+10826;BLONP;Blondel pere et fils;Speedy Express;Suyama;7,09;Francia
+10827;BONAP;Bon app';United Package;Davolio;63,54;Francia
+10828;RANCH;Rancho grande;Speedy Express;Dodsworth;90,85;Argentina
+10829;ISLAT;Island Trading;Speedy Express;Dodsworth;154,72;Reino Unido
+10830;TRADH;Tradicao Hipermercados;United Package;Peacock;81,83;Brasil
+10831;SANTG;Sante Gourmet;United Package;Leverling;72,19;Noruega
+10832;LAMAI;La maison d'Asie;United Package;Fuller;43,26;Francia
+10833;OTTIK;Ottilies Kaseladen;United Package;Suyama;71,49;Alemania
+10834;TRADH;Tradicao Hipermercados;Federal Shipping;Davolio;29,78;Brasil
+10835;ALFKI;Alfreds Futterkiste;Federal Shipping;Davolio;69,53;Alemania
+10836;ERNSH;Ernst Handel;Speedy Express;King;411,88;Austria
+10837;BERGS;Berglunds snabbkop;Federal Shipping;Dodsworth;13,32;Suecia
+10838;LINOD;LINO-Delicateses;Federal Shipping;Leverling;59,28;Venezuela
+10839;TRADH;Tradicao Hipermercados;Federal Shipping;Leverling;35,43;Brasil
+10840;LINOD;LINO-Delicateses;United Package;Peacock;2,71;Venezuela
+10841;SUPRD;Supremes delices;United Package;Buchanan;424,3;Belgica
+10842;TORTU;Tortuga Restaurante;Federal Shipping;Davolio;54,42;Mexico
+10843;VICTE;Victuailles en stock;United Package;Peacock;9,26;Francia
+10844;PICCO;Piccolo und mehr;United Package;Callahan;25,22;Austria
+10845;QUICK;QUICK-Stop;Speedy Express;Callahan;212,98;Alemania
+10846;SUPRD;Supremes delices;Federal Shipping;Fuller;56,46;Belgica
+10847;SAVEA;Save-a-lot Markets;Federal Shipping;Peacock;487,57;Estados Unidos
+10848;CONSH;Consolidated Holdings;United Package;King;38,24;Reino Unido
+10849;KOENE;Koniglich Essen;United Package;Dodsworth;0,56;Alemania
+10850;VICTE;Victuailles en stock;Speedy Express;Davolio;49,19;Francia
+10851;RICAR;Ricardo Adocicados;Speedy Express;Buchanan;160,55;Brasil
+10852;RATTC;Rattlesnake Canyon Grocery;Speedy Express;Callahan;174,05;Estados Unidos
+10853;BLAUS;Blauer See Delikatessen;United Package;Dodsworth;53,83;Alemania
+10854;ERNSH;Ernst Handel;United Package;Leverling;100,22;Austria
+10855;OLDWO;Old World Delicatessen;Speedy Express;Leverling;170,97;Estados Unidos
+10856;ANTON;Antonio Moreno Taqueria;United Package;Leverling;58,43;Mexico
+10857;BERGS;Berglunds snabbkop;United Package;Callahan;188,85;Suecia
+10858;LACOR;La corne d'abondance;Speedy Express;Fuller;52,51;Francia
+10859;FRANK;Frankenversand;United Package;Davolio;76,1;Alemania
+10860;FRANR;France restauration;Federal Shipping;Leverling;19,26;Francia
+10861;WHITC;White Clover Markets;United Package;Peacock;14,93;Estados Unidos
+10862;LEHMS;Lehmanns Marktstand;United Package;Callahan;53,23;Alemania
+10863;HILAA;HILARIoN-Abastos;United Package;Peacock;30,26;Venezuela
+10864;AROUT;Around the Horn;United Package;Peacock;3,04;Reino Unido
+10865;QUICK;QUICK-Stop;Speedy Express;Fuller;348,14;Alemania
+10866;BERGS;Berglunds snabbkop;Speedy Express;Buchanan;109,11;Suecia
+10867;LONEP;Lonesome Pine Restaurant;Speedy Express;Suyama;1,93;Estados Unidos
+10868;QUEEN;Queen Cozinha;United Package;King;191,27;Brasil
+10869;SEVES;Seven Seas Imports;Speedy Express;Buchanan;143,28;Reino Unido
+10870;WHITC;White Clover Markets;Federal Shipping;Buchanan;12,04;Estados Unidos
+10871;BONAP;Bon app';United Package;Dodsworth;112,27;Francia
+10872;GODOS;Godos Cocina Tipica;United Package;Buchanan;175,32;Espanya
+10873;WILMK;Wilman Kala;Speedy Express;Peacock;0,82;Finlandia
+10874;GODOS;Godos Cocina Tipica;United Package;Buchanan;19,58;Espanya
+10875;BERGS;Berglunds snabbkop;United Package;Peacock;32,37;Suecia
+10876;BONAP;Bon app';Federal Shipping;King;60,42;Francia
+10877;RICAR;Ricardo Adocicados;Speedy Express;Davolio;38,06;Brasil
+10878;QUICK;QUICK-Stop;Speedy Express;Peacock;46,69;Alemania
+10879;WILMK;Wilman Kala;Federal Shipping;Leverling;8,5;Finlandia
+10880;FOLKO;Folk och fa HB;Speedy Express;King;88,01;Suecia
+10881;CACTU;Cactus Comidas para llevar;Speedy Express;Peacock;2,84;Argentina
+10882;SAVEA;Save-a-lot Markets;Federal Shipping;Peacock;23,1;Estados Unidos
+10883;LONEP;Lonesome Pine Restaurant;Federal Shipping;Callahan;0,53;Estados Unidos
+10884;LETSS;Let's Stop N Shop;United Package;Peacock;90,97;Estados Unidos
+10885;SUPRD;Supremes delices;Federal Shipping;Suyama;5,64;Belgica
+10886;HANAR;Hanari Carnes;Speedy Express;Davolio;4,99;Brasil
+10887;GALED;Galeria del gastronomo;Federal Shipping;Callahan;1,25;Espanya
+10888;GODOS;Godos Cocina Tipica;United Package;Davolio;51,87;Espanya
+10889;RATTC;Rattlesnake Canyon Grocery;Federal Shipping;Dodsworth;280,61;Estados Unidos
+10890;DUMON;Du monde entier;Speedy Express;King;32,76;Francia
+10891;LEHMS;Lehmanns Marktstand;United Package;King;20,37;Alemania
+10892;MAISD;Maison Dewey;United Package;Peacock;120,27;Belgica
+10893;KOENE;Koniglich Essen;United Package;Dodsworth;77,78;Alemania
+10894;SAVEA;Save-a-lot Markets;Speedy Express;Davolio;116,13;Estados Unidos
+10895;ERNSH;Ernst Handel;Speedy Express;Leverling;162,75;Austria
+10896;MAISD;Maison Dewey;Federal Shipping;King;32,45;Belgica
+10897;HUNGO;Hungry Owl All-Night Grocers;United Package;Leverling;603,54;Irlanda
+10898;OCEAN;Oceano Atlantico Ltda.;United Package;Peacock;1,27;Argentina
+10899;LILAS;LILA-Supermercado;Federal Shipping;Buchanan;1,21;Venezuela
+10900;WELLI;Wellington Importadora;United Package;Davolio;1,66;Brasil
+10901;HILAA;HILARIoN-Abastos;Speedy Express;Peacock;62,09;Venezuela
+10902;FOLKO;Folk och fa HB;Speedy Express;Davolio;44,15;Suecia
+10903;HANAR;Hanari Carnes;Federal Shipping;Leverling;36,71;Brasil
+10904;WHITC;White Clover Markets;Federal Shipping;Leverling;162,95;Estados Unidos
+10905;WELLI;Wellington Importadora;United Package;Dodsworth;13,72;Brasil
+10906;WOLZA;Wolski  Zajazd;Federal Shipping;Peacock;26,29;Polonia
+10907;SPECD;Specialites du monde;Federal Shipping;Suyama;9,19;Francia
+10908;REGGC;Reggiani Caseifici;United Package;Peacock;32,96;Italia
+10909;SANTG;Sante Gourmet;United Package;Davolio;53,05;Noruega
+10910;WILMK;Wilman Kala;Federal Shipping;Davolio;38,11;Finlandia
+10911;GODOS;Godos Cocina Tipica;Speedy Express;Leverling;38,19;Espanya
+10912;HUNGO;Hungry Owl All-Night Grocers;United Package;Fuller;580,91;Irlanda
+10913;QUEEN;Queen Cozinha;Speedy Express;Peacock;33,05;Brasil
+10914;QUEEN;Queen Cozinha;Speedy Express;Suyama;21,19;Brasil
+10915;TORTU;Tortuga Restaurante;United Package;Fuller;3,51;Mexico
+10916;RANCH;Rancho grande;United Package;Davolio;63,77;Argentina
+10917;ROMEY;Romero y tomillo;United Package;Peacock;8,29;Espanya
+10918;BOTTM;Bottom-Dollar Markets;Federal Shipping;Leverling;48,83;Canada
+10919;LINOD;LINO-Delicateses;United Package;Fuller;19,8;Venezuela
+10920;AROUT;Around the Horn;United Package;Peacock;29,61;Reino Unido
+10921;VAFFE;Vaffeljernet;Speedy Express;Davolio;176,48;Dinamarca
+10922;HANAR;Hanari Carnes;Federal Shipping;Buchanan;62,74;Brasil
+10923;LAMAI;La maison d'Asie;Federal Shipping;King;68,26;Francia
+10924;BERGS;Berglunds snabbkop;United Package;Leverling;151,52;Suecia
+10925;HANAR;Hanari Carnes;Speedy Express;Leverling;2,27;Brasil
+10926;ANATR;Ana Trujillo Emparedados y helados;Federal Shipping;Peacock;39,92;Mexico
+10927;LACOR;La corne d'abondance;Speedy Express;Peacock;19,79;Francia
+10928;GALED;Galeria del gastronomo;Speedy Express;Davolio;1,36;Espanya
+10929;FRANK;Frankenversand;Speedy Express;Suyama;33,93;Alemania
+10930;SUPRD;Supremes delices;Federal Shipping;Peacock;15,55;Belgica
+10931;RICSU;Richter Supermarkt;United Package;Peacock;13,6;Suiza
+10932;BONAP;Bon app';Speedy Express;Callahan;134,64;Francia
+10933;ISLAT;Island Trading;Federal Shipping;Suyama;54,15;Reino Unido
+10934;LEHMS;Lehmanns Marktstand;Federal Shipping;Leverling;32,01;Alemania
+10935;WELLI;Wellington Importadora;Federal Shipping;Peacock;47,59;Brasil
+10936;GREAL;Great Lakes Food Market;United Package;Leverling;33,68;Estados Unidos
+10937;CACTU;Cactus Comidas para llevar;Federal Shipping;King;31,51;Argentina
+10938;QUICK;QUICK-Stop;United Package;Leverling;31,89;Alemania
+10939;MAGAA;Magazzini Alimentari Riuniti;United Package;Fuller;76,33;Italia
+10940;BONAP;Bon app';Federal Shipping;Callahan;19,77;Francia
+10941;SAVEA;Save-a-lot Markets;United Package;King;400,81;Estados Unidos
+10942;REGGC;Reggiani Caseifici;Federal Shipping;Dodsworth;17,95;Italia
+10943;BSBEV;B's Beverages;United Package;Peacock;2,17;Reino Unido
+10944;BOTTM;Bottom-Dollar Markets;Federal Shipping;Suyama;52,92;Canada
+10945;MORGK;Morgenstern Gesundkost;Speedy Express;Peacock;10,22;Alemania
+10946;VAFFE;Vaffeljernet;United Package;Davolio;27,2;Dinamarca
+10947;BSBEV;B's Beverages;United Package;Leverling;3,26;Reino Unido
+10948;GODOS;Godos Cocina Tipica;Federal Shipping;Leverling;23,39;Espanya
+10949;BOTTM;Bottom-Dollar Markets;Federal Shipping;Fuller;74,44;Canada
+10950;MAGAA;Magazzini Alimentari Riuniti;United Package;Davolio;2,5;Italia
+10951;RICSU;Richter Supermarkt;United Package;Dodsworth;30,85;Suiza
+10952;ALFKI;Alfreds Futterkiste;Speedy Express;Davolio;40,42;Alemania
+10953;AROUT;Around the Horn;United Package;Dodsworth;23,72;Reino Unido
+10954;LINOD;LINO-Delicateses;Speedy Express;Buchanan;27,91;Venezuela
+10955;FOLKO;Folk och fa HB;United Package;Callahan;3,26;Suecia
+10956;BLAUS;Blauer See Delikatessen;United Package;Suyama;44,65;Alemania
+10957;HILAA;HILARIoN-Abastos;Federal Shipping;Callahan;105,36;Venezuela
+10958;OCEAN;Oceano Atlantico Ltda.;United Package;King;49,56;Argentina
+10959;GOURL;Gourmet Lanchonetes;United Package;Suyama;4,98;Brasil
+10960;HILAA;HILARIoN-Abastos;Speedy Express;Leverling;2,08;Venezuela
+10961;QUEEN;Queen Cozinha;Speedy Express;Callahan;104,47;Brasil
+10962;QUICK;QUICK-Stop;United Package;Callahan;275,79;Alemania
+10963;FURIB;Furia Bacalhau e Frutos do Mar;Federal Shipping;Dodsworth;2,7;Portugal
+10964;SPECD;Specialites du monde;United Package;Leverling;87,38;Francia
+10965;OLDWO;Old World Delicatessen;Federal Shipping;Suyama;144,38;Estados Unidos
+10966;CHOPS;Chop-suey Chinese;Speedy Express;Peacock;27,19;Suiza
+10967;TOMSP;Toms Spezialitaten;United Package;Fuller;62,22;Alemania
+10968;ERNSH;Ernst Handel;Federal Shipping;Davolio;74,6;Austria
+10969;COMMI;Comercio Mineiro;United Package;Davolio;0,21;Brasil
+10970;BOLID;Bolido Comidas preparadas;Speedy Express;Dodsworth;16,16;Espanya
+10971;FRANR;France restauration;United Package;Fuller;121,82;Francia
+10972;LACOR;La corne d'abondance;United Package;Peacock;0,02;Francia
+10973;LACOR;La corne d'abondance;United Package;Suyama;15,17;Francia
+10974;SPLIR;Split Rail Beer & Ale;Federal Shipping;Leverling;12,96;Estados Unidos
+10975;BOTTM;Bottom-Dollar Markets;Federal Shipping;Davolio;32,27;Canada
+10976;HILAA;HILARIoN-Abastos;Speedy Express;Davolio;37,97;Venezuela
+10977;FOLKO;Folk och fa HB;Federal Shipping;Callahan;208,5;Suecia
+10978;MAISD;Maison Dewey;United Package;Dodsworth;32,82;Belgica
+10979;ERNSH;Ernst Handel;United Package;Callahan;353,07;Austria
+10980;FOLKO;Folk och fa HB;Speedy Express;Peacock;1,26;Suecia
+10981;HANAR;Hanari Carnes;United Package;Davolio;193,37;Brasil
+10982;BOTTM;Bottom-Dollar Markets;Speedy Express;Fuller;14,01;Canada
+10983;SAVEA;Save-a-lot Markets;United Package;Fuller;657,54;Estados Unidos
+10984;SAVEA;Save-a-lot Markets;Federal Shipping;Davolio;211,22;Estados Unidos
+10985;HUNGO;Hungry Owl All-Night Grocers;Speedy Express;Fuller;91,51;Irlanda
+10986;OCEAN;Oceano Atlantico Ltda.;United Package;Callahan;217,86;Argentina
+10987;EASTC;Eastern Connection;Speedy Express;Callahan;185,48;Reino Unido
+10988;RATTC;Rattlesnake Canyon Grocery;United Package;Leverling;61,14;Estados Unidos
+10989;QUEDE;Que Delicia;Speedy Express;Fuller;34,76;Brasil
+10990;ERNSH;Ernst Handel;Federal Shipping;Fuller;117,61;Austria
+10991;QUICK;QUICK-Stop;Speedy Express;Davolio;38,51;Alemania
+10992;THEBI;The Big Cheese;Federal Shipping;Davolio;4,27;Estados Unidos
+10993;FOLKO;Folk och fa HB;Federal Shipping;King;8,81;Suecia
+10994;VAFFE;Vaffeljernet;Federal Shipping;Fuller;65,53;Dinamarca
+10995;PERIC;Pericles Comidas clasicas;Federal Shipping;Davolio;46,0;Mexico
+10996;QUICK;QUICK-Stop;United Package;Peacock;1,12;Alemania
+10997;LILAS;LILA-Supermercado;United Package;Callahan;73,91;Venezuela
+10998;WOLZA;Wolski  Zajazd;United Package;Callahan;20,31;Polonia
+10999;OTTIK;Ottilies Kaseladen;United Package;Suyama;96,35;Alemania
+11000;RATTC;Rattlesnake Canyon Grocery;Federal Shipping;Fuller;55,12;Estados Unidos
+11001;FOLKO;Folk och fa HB;United Package;Fuller;197,3;Suecia
+11002;SAVEA;Save-a-lot Markets;Speedy Express;Peacock;141,16;Estados Unidos
+11003;THECR;The Cracker Box;Federal Shipping;Leverling;14,91;Estados Unidos
+11004;MAISD;Maison Dewey;Speedy Express;Leverling;44,84;Belgica
+11005;WILMK;Wilman Kala;Speedy Express;Fuller;0,75;Finlandia
+11006;GREAL;Great Lakes Food Market;United Package;Leverling;25,19;Estados Unidos
+11007;PRINI;Princesa Isabel Vinhos;United Package;Callahan;202,24;Portugal
+11008;ERNSH;Ernst Handel;Federal Shipping;King;79,46;Austria
+11009;GODOS;Godos Cocina Tipica;Speedy Express;Fuller;59,11;Espanya
+11010;REGGC;Reggiani Caseifici;United Package;Fuller;28,71;Italia
+11011;ALFKI;Alfreds Futterkiste;Speedy Express;Leverling;1,21;Alemania
+11012;FRANK;Frankenversand;Federal Shipping;Davolio;242,95;Alemania
+11013;ROMEY;Romero y tomillo;Speedy Express;Fuller;32,99;Espanya
+11014;LINOD;LINO-Delicateses;Federal Shipping;Fuller;23,6;Venezuela
+11015;SANTG;Sante Gourmet;United Package;Fuller;4,62;Noruega
+11016;AROUT;Around the Horn;United Package;Dodsworth;33,8;Reino Unido
+11017;ERNSH;Ernst Handel;United Package;Dodsworth;754,26;Austria
+11018;LONEP;Lonesome Pine Restaurant;United Package;Peacock;11,65;Estados Unidos
+11019;RANCH;Rancho grande;Federal Shipping;Suyama;3,17;Argentina
+11020;OTTIK;Ottilies Kaseladen;United Package;Fuller;43,3;Alemania
+11021;QUICK;QUICK-Stop;Speedy Express;Leverling;297,18;Alemania
+11022;HANAR;Hanari Carnes;United Package;Dodsworth;6,27;Brasil
+11023;BSBEV;B's Beverages;United Package;Davolio;123,83;Reino Unido
+11024;EASTC;Eastern Connection;Speedy Express;Peacock;74,36;Reino Unido
+11025;WARTH;Wartian Herkku;Federal Shipping;Suyama;29,17;Finlandia
+11026;FRANS;Franchi S.p.A.;Speedy Express;Peacock;47,09;Italia
+11027;BOTTM;Bottom-Dollar Markets;Speedy Express;Davolio;52,52;Canada
+11028;KOENE;Koniglich Essen;Speedy Express;Fuller;29,59;Alemania
+11029;CHOPS;Chop-suey Chinese;Speedy Express;Peacock;47,84;Suiza
+11030;SAVEA;Save-a-lot Markets;United Package;King;830,75;Estados Unidos
+11031;SAVEA;Save-a-lot Markets;United Package;Suyama;227,22;Estados Unidos
+11032;WHITC;White Clover Markets;Federal Shipping;Fuller;606,19;Estados Unidos
+11033;RICSU;Richter Supermarkt;Federal Shipping;King;84,74;Suiza
+11034;OLDWO;Old World Delicatessen;Speedy Express;Callahan;40,32;Estados Unidos
+11035;SUPRD;Supremes delices;United Package;Fuller;0,17;Belgica
+11036;DRACD;Drachenblut Delikatessen;Federal Shipping;Callahan;149,47;Alemania
+11037;GODOS;Godos Cocina Tipica;Speedy Express;King;3,2;Espanya
+11038;SUPRD;Supremes delices;United Package;Davolio;29,59;Belgica
+11039;LINOD;LINO-Delicateses;United Package;Davolio;65,0;Venezuela
+11040;GREAL;Great Lakes Food Market;Federal Shipping;Peacock;18,84;Estados Unidos
+11041;CHOPS;Chop-suey Chinese;United Package;Leverling;48,22;Suiza
+11042;COMMI;Comercio Mineiro;Speedy Express;Fuller;29,99;Brasil
+11043;SPECD;Specialites du monde;United Package;Buchanan;8,8;Francia
+11044;WOLZA;Wolski  Zajazd;Speedy Express;Peacock;8,72;Polonia
+11045;BOTTM;Bottom-Dollar Markets;United Package;Suyama;70,58;Canada
+11046;WANDK;Die Wandernde Kuh;United Package;Callahan;71,64;Alemania
+11047;EASTC;Eastern Connection;Federal Shipping;King;46,62;Reino Unido
+11048;BOTTM;Bottom-Dollar Markets;Federal Shipping;King;24,12;Canada
+11049;GOURL;Gourmet Lanchonetes;Speedy Express;Leverling;8,34;Brasil
+11050;FOLKO;Folk och fa HB;United Package;Callahan;59,41;Suecia
+11051;LAMAI;La maison d'Asie;Federal Shipping;King;2,79;Francia
+11052;HANAR;Hanari Carnes;Speedy Express;Leverling;67,26;Brasil
+11053;PICCO;Piccolo und mehr;United Package;Fuller;53,05;Austria
+11054;CACTU;Cactus Comidas para llevar;Speedy Express;Callahan;0,33;Argentina
+11055;HILAA;HILARIoN-Abastos;United Package;King;120,92;Venezuela
+11056;EASTC;Eastern Connection;United Package;Callahan;278,96;Reino Unido
+11057;NORTS;North/South;Federal Shipping;Leverling;4,13;Reino Unido
+11058;BLAUS;Blauer See Delikatessen;Federal Shipping;Dodsworth;31,14;Alemania
+11059;RICAR;Ricardo Adocicados;United Package;Fuller;85,8;Brasil
+11060;FRANS;Franchi S.p.A.;United Package;Fuller;10,98;Italia
+11061;GREAL;Great Lakes Food Market;Federal Shipping;Peacock;14,01;Estados Unidos
+11062;REGGC;Reggiani Caseifici;United Package;Peacock;29,93;Italia
+11063;HUNGO;Hungry Owl All-Night Grocers;United Package;Leverling;81,73;Irlanda
+11064;SAVEA;Save-a-lot Markets;Speedy Express;Davolio;30,09;Estados Unidos
+11065;LILAS;LILA-Supermercado;Speedy Express;Callahan;12,91;Venezuela
+11066;WHITC;White Clover Markets;United Package;King;44,72;Estados Unidos
+11067;DRACD;Drachenblut Delikatessen;United Package;Davolio;7,98;Alemania
+11068;QUEEN;Queen Cozinha;United Package;Callahan;81,75;Brasil
+11069;TORTU;Tortuga Restaurante;United Package;Davolio;15,67;Mexico
+11070;LEHMS;Lehmanns Marktstand;Speedy Express;Fuller;136,0;Alemania
+11071;LILAS;LILA-Supermercado;Speedy Express;Davolio;0,93;Venezuela
+11072;ERNSH;Ernst Handel;United Package;Peacock;258,64;Austria
+11073;PERIC;Pericles Comidas clasicas;United Package;Fuller;24,95;Mexico
+11074;SIMOB;Simons bistro;United Package;King;18,44;Dinamarca
+11075;RICSU;Richter Supermarkt;United Package;Callahan;6,19;Suiza
+11076;BONAP;Bon app';United Package;Peacock;38,28;Francia
+11077;RATTC;Rattlesnake Canyon Grocery;United Package;Davolio;8,53;Estados Unidos
+11078;ALFKI;Alfreds Futterkiste;Speedy Express;Davolio;1200,0;España

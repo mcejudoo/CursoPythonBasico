@@ -40,16 +40,22 @@ print(hh,mm,ss)
 
 # Pruebas con matriculas europeas: 2345GGT:
 print('Matriculas:')
-L = ['1234DRF','12FFF','WWW4567','1234RRE','4455GTH','1244AED']
+L = ['1234DRF','12FFF','WWW4567','1234RRE','4455GTH','1244AED','1234WWDR']
 #consonantes = "[" + "".join([i for i in string.ascii_uppercase if i not in "AEIOU"]) + "]"
 #print(consonantes)
 #patron = r"\d{4}" + consonantes + "{3}$"
-patron = r"\d{4}[A-Z]{3}"
-patron2 = r"\d{4}[^AEIOU]{3}"
+patron = r"\d{4}[A-Z]{3}$"
+patron2 = r"\d{4}[^AEIOU]{3}$"
 print(patron)
 R = [validar(patron, i) and validar(patron2, i) for i in L]
 print(L)
 print(R)
 
+
+# Prueba con findall:
+patron = r"[1-9][0-9]{,7}[A-Z]" 
+txt = "El dni es: 12345678D y el otro dni era: 10004023X"
+L = re.findall(patron, txt)
+print(L)
 
 
