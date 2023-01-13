@@ -82,6 +82,34 @@ class BaseDatos:
             L.append(Empleado(*t))
         return L
             
+    def exportarPedidos(self, path, sep=';'):
+        sql="""select p.idpedido, p.idcliente, c.nombre as nombreCliente, e.nombre as nombreEmpresa, 
+        emp.nombre as nombreEmpleado, p.importe, p.pais 
+        from pedidos p inner join clientes c on p.idcliente = c.idcliente
+        inner join empresasenvios e on p.idempresaenvio = e.id
+        inner join empleados emp on p.idempleado = emp.id"""
+        fich = None
+        try:
+            fich = open(path, "w")
+            self.cur.execute(sql)
+            cabs = sep.join([t[0] for t in self.cur.description])
+            contador = 0
+            
+            fich.write(cabs+"\n")
+            for t in self.cur.fetchall():
+                L = [str(i) for i in t]
+                L[5] = L[5].replace('.',',')
+                linea = sep.join(L)
+                fich.write(linea+"\n")
+                contador += 1
+
+            print(f'Se ha exportado el fichero {path} con {contador} lineas')
+        except Exception as e:
+            raise e
+        finally:
+            if fich: fich.close()
+
+    
     def __del__(self):
         if hasattr(self, "cur"):
             if self.cur is not None:
@@ -94,12 +122,26 @@ class BaseDatos:
 if __name__ == '__main__':
     try:
         bd = BaseDatos("../bd/empresa3.db")
+        bd.exportarPedidos('pedidos.csv')
+
+        exit()
         L = bd.select("ventas")
         for e in L:
             print(e)
 
-        emp = bd.read(1)
-        print('emp 1: ', emp)
+        L2 = [e.__dict__ for e in L]
+        print(L2)
+
+        bd.delete(13)
+
+        emp2 = Empleado(13, 'Sanz','Representante de ventas')
+        bd.create(emp2)
+
+        emp = bd.read(13)
+        print('emp 13: ', emp)
+
+        emp.cargo = "Gerente de ventas"
+        bd.update(emp)        
 
     except Exception as e:
         print("ERROR: ", e)
