@@ -55,3 +55,6 @@ p = None
 print(type(p))
 if not p:
     print('Es None')
+
+# Comodín pass:
+if n == 0:
