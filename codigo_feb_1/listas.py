@@ -44,3 +44,42 @@ print('media: ', round(sum(L)/len(L),2))
 for pos, i in enumerate(L):
     print(pos, i)
 
+# Modificación de elementos
+L[0] = 1000
+L[-1] = 999
+print(L)
+
+# Copiar listas o una colección mutable!
+L = [1,2,3,4,5]
+L2 = L # Ojo estamos creando una referencia a los mismos datos!
+L[0] = 1000
+print('L',L, id(L))
+print('L2',L2, id(L2))
+print()
+
+L = [1,2,3,4,5]
+L2 = L.copy() # Ojo estamos creando una referencia a los mismos datos!
+L[0] = 1000
+print('L',L, id(L))
+print('L2',L2, id(L2))
+print()
+
+L = [[1,2],[3,4,5]]
+L2 = L.copy() # Funciona con elementos inmutables dentro de la lista!
+L[0] = 1000
+L[-1] += [999]
+print('L',L, id(L))
+print('L2',L2, id(L2))
+print()
+
+# Copia de listas con elementos mutables!
+import copy
+L = [[1,2],[3,4,5]]
+L2 = copy.deepcopy(L) # Funciona con elementos mutables dentro de la lista
+L[0] = 1000
+L[-1] += [999]
+print('L',L, id(L))
+print('L2',L2, id(L2))
+print()
+
+# Slicing
