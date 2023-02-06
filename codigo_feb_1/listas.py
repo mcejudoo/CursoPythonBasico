@@ -82,4 +82,41 @@ print('L',L, id(L))
 print('L2',L2, id(L2))
 print()
 
-# Slicing
+# Slicing [ini:fin-1:salto] Vale para list, tuple y str
+L = [1,2,3,4,5,6,7,8]
+print('El primero: ', L[0], L[-8])
+print('El último: ', L[7], L[-1])
+print('Los 3 primeros: ', L[0:3])
+print('Los 3 primeros: ', L[:3]) # Coge desde el principio
+print('Los 3 últimos: ', L[-3:])
+print('Quitar el primero y el último:', L[1:-1])
+print('Toda la lista: ', L[:])
+print('Obtener el 3º y el 4º: ', L[3:5])
+print('La lista completa de dos en dos: ', L[::2])
+print('Invertida: ', L[::-1])
+
+# Iterar por la lista sin coger el último:
+for i in L[:-1]:
+    print(i)
+
+s = "adios"
+print('Quitar la primera y la última letra: ', s[1:-1])
+
+
+# Bucle para 10 iteraciones: ERROR
+"""
+for i in 10:
+    print(i)
+"""
+
+# range(ini, fin-1, salto)
+for i in range(10):
+    print(i, end=' ')
+print()
+
+for i in range(10, 0, -1):
+    print(i, end=' ')
+print()
+
+L = list(range(1,11))
+print(L)
