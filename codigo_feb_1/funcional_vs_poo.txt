@@ -1,0 +1,10 @@
+listas: 
+L = [1,2,3,4]
+
+Prog. funcional
+nombre_funcion(L)
+len(L)
+
+
+Prog. Orientada a Objetos
+L.nombre_metodo()

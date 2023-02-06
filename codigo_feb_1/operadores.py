@@ -58,3 +58,6 @@ if not p:
 
 # Comodín pass:
 if n == 0:
+    pass
+    
+print('fin')

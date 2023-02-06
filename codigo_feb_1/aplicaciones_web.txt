@@ -1,0 +1,18 @@
+app web: Django 
+servicios web REST / SOAP
+
+Análisis de datos / ML / DL --> Anaconda
+Matemáticas
+
+App Escritorio: PyQt
+Script
+
+POO
+Acceso a BD: Oracle / MySQL / SQLite3
+BD No SQL: Redis, Mongo ...
+
+
+Versiones: x.y.z
+z: 1.2.3 -> 1.2.4  Bugs
+y: 1.2.3 -> 1.3.0  Nuevas funcionalidades
+x: 1.2.3 -> 2.0.0  Cambios core
