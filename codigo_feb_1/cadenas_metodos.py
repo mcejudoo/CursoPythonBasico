@@ -22,8 +22,25 @@ def csvDict(csv, sep_fila='\n', sep_col=';'):
         resul.append(d)
     return resul
 
+def dictCSV(L, sep_fila='\n', sep_col=';'):
+    cabs = None
+    aux = []
+    for d in L:
+        if not cabs:
+            cabs = sep_col.join(d.keys())
+            aux.append(cabs)
+
+        linea = sep_col.join(d.values())
+        aux.append(linea)
+
+    csv = sep_fila.join(aux)
+    return csv
+
 if __name__ == "__main__":
-    csvDict(texto)
+    L = csvDict(texto)
+    csv = dictCSV(L)
+    print(csv)
+    exit()
 
     s1 = "id;nombre;cargo"
     s2 = "1;Davolio;Representante de ventas"

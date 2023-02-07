@@ -2,6 +2,15 @@
 Diccionarios en Python: métodos
 """
 
+def invertirDict(d):
+    claves = d.keys()
+    valores = d.values()
+    salida=dict(zip(valores,claves))
+    return salida
+
+    # return dict(zip(d.values(), d.keys()))
+
+
 # Recuperar una clave:
 d = {"a":1, "b":2, "c":3, "d":4}
 
@@ -31,3 +40,13 @@ print(v)
 
 d.pop('b')
 print(d)
+
+# Invertir un diccionario:
+k = list("aeiou")
+v = list(range(5))
+d = dict(zip(k,v))
+d2 = invertirDict(d)
+print(d)
+print(d2)
+
+

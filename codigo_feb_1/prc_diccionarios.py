@@ -27,7 +27,6 @@ print(d2)
 L = sorted(d2.items(), key=lambda t: t[1], reverse=True) 
 print(L[:5])
 
-
 # Lo mismo por palabras:
 palabras=texto.replace('\n','').split(' ')
 k3=dict()

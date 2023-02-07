@@ -15,14 +15,14 @@ print(c1 & c2)
 print(c1 ^ c2)
 print(c1 | c2)
 
-comida = ['Ana','Alberto','Nuria','Gema','Andres']
-cena = ['Ana', 'Andres', 'Miguel','Sandra','Eva']
+comida = set(['Ana','Alberto','Nuria','Gema','Andres'])
+cena = set(['Ana', 'Andres', 'Miguel','Sandra','Eva'])
 
-print('Quien va solo a comer: ')
-print('Quien va solo a cenar: ')
-print('Quien se ha apuntado a un solo evento:')
-print('Quien va a comer y a cenar: ')
-print('Quienes han participado en los eventos:')
+print('Quien va solo a comer: ', comida-cena)
+print('Quien va solo a cenar: ', cena-comida)
+print('Quien se ha apuntado a un solo evento:', comida ^ cena)
+print('Quien va a comer y a cenar: ', comida & cena)
+print('Quienes han participado en los eventos:', comida | cena)
 
 
 
