@@ -12,11 +12,19 @@ texto = """id;nombre;cargo
 8;Callahan;Coordinador ventas interno
 9;Dodsworth;Representante de ventas"""
 
-def csvDict(csv):
-    pass
-
+def csvDict(csv, sep_fila='\n', sep_col=';'):
+    L = csv.split(sep_fila)
+    cabs = L[0].split(sep_col)
+    resul = []
+    for i in L[1:]:
+        datos = i.split(sep_col)
+        d = dict(zip(cabs, datos))
+        resul.append(d)
+    return resul
 
 if __name__ == "__main__":
+    csvDict(texto)
+
     s1 = "id;nombre;cargo"
     s2 = "1;Davolio;Representante de ventas"
     L1 = s1.split(';')
