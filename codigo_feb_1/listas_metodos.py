@@ -89,6 +89,16 @@ L.sort(key=len, reverse=True)
 print(L)
 
 L = [(234,8,9,3),(1,0,1),(88,444),(90,12)]
+L.sort(key=sum)
+print(L)
+
+t = (6,4,3,1,2,4,6,7,8,9)
+L2 = sorted(t, reverse=True)
+print(L2)
+
+s = "Hola que tal"
+L3 = sorted(s)
+print(L3)
 
 
 
