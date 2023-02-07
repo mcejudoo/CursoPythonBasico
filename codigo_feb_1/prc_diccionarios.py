@@ -23,6 +23,10 @@ letras = set(texto)
 for i in letras:
     d2[i] = texto.count(i)
 print(d2)
+# Las 5 letras que mas se repiten:
+L = sorted(d2.items(), key=lambda t: t[1], reverse=True) 
+print(L[:5])
+
 
 # Lo mismo por palabras:
 palabras=texto.replace('\n','').split(' ')
