@@ -3,7 +3,7 @@ Funciones en Python: formas de llamar a una función.
 Tipos anotados
 """
 
-def sumar(a,b):
+def sumar(a,b):     
     return a+b
 
 def repetir(a, b="", n=1):
@@ -11,6 +11,10 @@ def repetir(a, b="", n=1):
 
 if __name__ == '__main__':
 
+    print('sumar: ', sumar("hola","adios"))
+    print('sumar: ', sumar(list("hola"),list("adios")))
+    print('sumar: ', sumar(tuple("hola"),tuple("adios")))
+    
     # Forma posicional:
     s = sumar(1,3)
     print(s)
