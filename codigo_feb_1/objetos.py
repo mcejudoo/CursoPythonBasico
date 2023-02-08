@@ -4,7 +4,27 @@ P.O.O en Python
 from collections import namedtuple
 
 CuentaBancaria = namedtuple('CuentaBancaria',['entidad','sucursal','dc','numero'])
+N = 0
 
+class Hora:
+
+    def __init__(self, h=0,m=0):
+        self.h = h
+        self.m = m
+
+    def __str__(self):
+        # 3 y 5 -> 03:05
+        return "%02d:%02d" % (self.h, self.m)
+
+    def __add__(self, other):
+        pass
+
+    
+def testHora():
+    h1 = Hora(4,55)
+    h2 = Hora(1,8)
+    s = h1 + h2  # s = h1.__add__(h2)  # 06:03
+    print(h1,h2,s)
 
 class Persona:
 
@@ -29,6 +49,10 @@ class Persona:
     def __repr__(self):
         return str(self)
 
+    def __eq__(self, otro):
+        return self.altura == otro.altura and self.edad == otro.edad and self.nombre == otro.nombre
+      
+
     def __lt__(self, otro):
         return self.edad < otro.edad
 
@@ -50,11 +74,19 @@ class Empleado(Persona):
 
     @staticmethod
     def getNumEmpleados():
+        # No lleva ni cls ni self
+        return Empleado.numEmpleados
+
+    @classmethod
+    def getNumEmpleados2(cls):
         return Empleado.numEmpleados
 
     def subirSueldo(self, porcentaje=15.0):
         self.sueldo += self.sueldo * porcentaje / 100
 
+    def __eq__(self, otro):
+        return super().__eq__(otro) and self.empresa == otro.empresa and self.sueldo == otro.sueldo and self.cc == otro.cc
+      
     def __str__(self):
         #return Persona.__str__(self) + ...
         return super().__str__() + " " + self.empresa + " " + str(self.sueldo) + " " + str(self.cc)
@@ -90,7 +122,16 @@ def testPersona():
 def testEmpleado():
     print('Num Empleados: ', Empleado.getNumEmpleados())
     cc1 = CuentaBancaria(3000,1234,45,12345678)
+    cc2 = CuentaBancaria(3000,1234,45,12345678)
     emp1 = Empleado('Sandra',34,1.65, "Santander", 2000, cc1)
+    emp2 = Empleado('Sandra',34,1.65, "Santander", 2000, cc2)
+
+    if emp1 == emp2:  # if emp1.__eq__(emp2):
+        print('Son iguales')
+    else:
+        print('No son iguales')
+
+
     print('Num Empleados: ', Empleado.getNumEmpleados())
     print(emp1)
     emp1.cumpleaños()
@@ -101,5 +142,6 @@ def testEmpleado():
 
 if __name__ == '__main__':
     #testPersona()
-    testEmpleado()
+    #testEmpleado()
+    testHora()
    
