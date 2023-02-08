@@ -1,6 +1,10 @@
 """
 P.O.O en Python
 """
+from collections import namedtuple
+
+CuentaBancaria = namedtuple('CuentaBancaria',['entidad','sucursal','dc','numero'])
+
 
 class Persona:
 
@@ -28,7 +32,7 @@ class Persona:
     def __lt__(self, otro):
         return self.edad < otro.edad
 
-if __name__ == '__main__':
+def testPersona():
     obj1 = Persona("Jose", altura=1.77)
     print(obj1) # se traduce por: obj1.__str__()
     #print(obj1.__str__())
@@ -51,3 +55,13 @@ if __name__ == '__main__':
     print(L2)
     obj1.telefono = 600334433
     print(obj1.__dict__)
+    print(obj1.cc.entidad)
+
+def testEmpleado():
+    cc1 = CuentaBancaria(3000,1234,45,12345678)
+    
+
+if __name__ == '__main__':
+    #testPersona()
+    testEmpleado()
+   
