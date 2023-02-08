@@ -1,0 +1,13 @@
+Polimorfismo:
+class Animal:
+	def emitirSonido():
+
+class Vaca(Animal):
+	def emitirSonido():
+
+class Perro(Animal):
+	def emitirSonido():
+
+granja = [Perro(), Perro(), Vaca(), Vaca()]
+for i in granja:
+	i.emitirSonido()

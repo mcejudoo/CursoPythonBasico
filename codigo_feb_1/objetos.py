@@ -9,15 +9,19 @@ N = 0
 class Hora:
 
     def __init__(self, h=0,m=0):
-        self.h = h
-        self.m = m
+        self.__h = h
+        self.__m = m
+        self.__inicializar()
+
+    def __inicializar(self):
+        pass
 
     def __str__(self):
         # 3 y 5 -> 03:05
-        return "%02d:%02d" % (self.h, self.m)
+        return "%02d:%02d" % (self.__h, self.__m)
 
-    def __add__(self, other):
-        pass
+    def __add__(self, otro):
+        return Hora((self.__h+otro.__h) + (self.__m+otro.__m) // 60, (self.__m+otro.__m) % 60)
 
     
 def testHora():
@@ -25,6 +29,8 @@ def testHora():
     h2 = Hora(1,8)
     s = h1 + h2  # s = h1.__add__(h2)  # 06:03
     print(h1,h2,s)
+    print(s.__dict__)
+    #print(s.__h) Error ahora 
 
 class Persona:
 
@@ -125,6 +131,8 @@ def testEmpleado():
     cc2 = CuentaBancaria(3000,1234,45,12345678)
     emp1 = Empleado('Sandra',34,1.65, "Santander", 2000, cc1)
     emp2 = Empleado('Sandra',34,1.65, "Santander", 2000, cc2)
+    emp1.sueldo = 20000
+    print(emp1)
 
     if emp1 == emp2:  # if emp1.__eq__(emp2):
         print('Son iguales')

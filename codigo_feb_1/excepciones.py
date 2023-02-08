@@ -39,5 +39,17 @@ def test2():
     except Exception as e:
         print(e.__class__.__name__,  e)
 
+def test3(n):
+    # Lanzar una excepción
+    if n:
+        print('Valor ok: ', n)
+    else:
+        raise ValueError('No se admiten valores: 0, cadena vacía o None')
+
+
 if __name__ == '__main__':
-    test2()
+    try:
+        test3(0)
+    except Exception as e:
+        print(e)
+    print('Continua ...')

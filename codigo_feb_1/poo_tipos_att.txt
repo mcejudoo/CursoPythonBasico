@@ -1,0 +1,7 @@
+Dentro de una clase:
+Dos tipos de atributos
+- De instancia --> __init__
+- De clase (se comparten con todos los objetos de la clase) fuera de los métodos
+
+Los métodos de clase y estáticos es que no necesitamos un objeto de la clase
+se suele acceder a través del nombre de la clase

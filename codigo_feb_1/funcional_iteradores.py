@@ -92,3 +92,13 @@ def calcularDistancia(p,q):
 
 
 print('El más cercano: ', functools.reduce(calcularDistancia, nube))
+
+fmin = lambda x,y : x if x < y else y
+print(fmin(8,5))
+
+
+
+
+
+
+

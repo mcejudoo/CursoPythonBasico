@@ -1,0 +1,75 @@
+
+Personas:
+1 persona -> 1 objeto
+
+características físicas: los att. definen: ATRIBUTOS / PROPIEDADES
+altura
+edad
+peso
+color de pelo
+color de ojos
+
+ACCIONES: métodos (funciones)
+comer()
+dormir()
+andar()
+...
+
+instanciar --> crear un objeto (crear Persona)
+constructor --> crear objetos
+
+obj = Persona(1.85, 67, 80 ...)
+obj.comer()
+
+------------------------------------------------------
+Herencia: Son clases que tienen un conocimiento común
+Composición: Una clase se desglosa en partes que son objetos de otras clases
+Asociación: Cuando dos independientes interactúan en el tiempo. 
+Hay un objeto que tiene un método que recibe por parámetro otro objeto
+miCoche = Coche()
+miCoche.repostar(surtidor)
+
+---------------------------------------------------------
+object: __str__()
+^
+|
+Persona: __str__()
+
+----------------------------------------------------------
+
+Funciones de python y Func. especiales:
+str()			__str__()
+del()			__del__()
+len()			__len__()
+repr()			__repr__()
+
+------------------------------------------------------
+Operadores relacionales:
+<			__lt__()
+>			__gt__()
+=			__eq__()
+
+------------------------------------------------------
+Operadores aritméticos:
++			__add__()
+-			__sub__()
+*
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

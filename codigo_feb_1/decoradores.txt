@@ -1,0 +1,26 @@
+
+
+def grabarDatos():
+	if tienePermiso(user) ...
+	pass
+
+
+def borrarDatos():
+	if tienePermiso(user) ...
+	pass
+
+
+-----------------------------------
+
+def tienePermiso():
+	# Se ejecuta ANTES de la función que está decorando
+
+@tienePermiso
+def grabarDatos():
+	pass
+
+@tienePermiso
+def borrarDatos():
+	pass
+
+grabarDatos(....)

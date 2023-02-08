@@ -1,0 +1,10 @@
+class Figura:
+	Att: color, etiqueta, centro
+
+	def calcularArea():
+
+class Triangulo(Figura):
+	Att: base, altura
+
+
+	

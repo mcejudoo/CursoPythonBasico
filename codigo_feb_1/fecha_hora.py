@@ -30,7 +30,7 @@ class Time(object):
         self.__ss = ss
 
 
-    # definición de propiedades:
+    # definiciÃ³n de propiedades:
     hh = property(getHH, setHH)
     mm = property(getMM, setMM)
     ss = property(getSS, setSS)
@@ -99,15 +99,15 @@ class Date(object):
 
     yy = property(getYY,setYY)
 
-class DateTime(Date,Time):
+class DateTime(Time,Date):
 
     def __init__(self,dd=0,MM=0,yy=0,hh=0,mm=0,ss=0):
         Date.__init__(self,dd,MM,yy)
         Time.__init__(self,hh,mm,ss)
 
-	
     def __str__(self):
         return Date.__str__(self) + " " + Time.__str__(self)
+    
 
 # pruebas con la clase Time
 
@@ -120,6 +120,11 @@ if h1 == h2:
 else:
     print ("h1 != h2")
 
+
+#pruebas con la clase DateTime:
+dt = DateTime(31,5,2015,6,8,34)
+print (str(dt))
+exit()
 
 print ("__cmp__ con h1 y h2: ", h1.__cmp__(h2))
 print ("__cmp__ con h2 y h1: ", h1.__cmp__(h2))
@@ -138,11 +143,9 @@ print ('suma: ' + str(suma))
 # pruebas con la clase Date:
 d1 = Date(8,5,2020)
 if d1.esBisiesto():
-    print (str(d1.yy) + " es un año bisiesto")
+    print (str(d1.yy) + " es un aï¿½o bisiesto")
 print (d1)
 
-#pruebas con la clase DateTime:
-dt = DateTime(31,5,2015,6,8,34)
-print (str(dt))
+
 
 

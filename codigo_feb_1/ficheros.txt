@@ -1,0 +1,10 @@
+f=None
+try:
+  f = abrirFichero('...') --> ERROr
+  f.leer()  
+ 
+except Exception as e:
+  print(e)
+
+finally:
+  if f: f.cerrar()
