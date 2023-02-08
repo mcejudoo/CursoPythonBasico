@@ -34,21 +34,33 @@ class Persona:
 
 class Empleado(Persona):
 
+    # Variable de clase: común a todos los objetos
+    numEmpleados = 0
+
     def __init__(self,nombre="", edad=0, altura=0.0, empresa="", sueldo=0.0, cc=None):
         # Llamamos al constructor de la clase Padre:
         Persona.__init__(self, nombre, edad, altura)  # También vale: super().__init__(nombre, edad, altura)
+
+        Empleado.numEmpleados += 1
         
         # Definir los atributos de la clase Empleado:
         self.empresa = empresa
         self.sueldo = sueldo
         self.cc = cc
 
+    @staticmethod
+    def getNumEmpleados():
+        return Empleado.numEmpleados
+
     def subirSueldo(self, porcentaje=15.0):
-        pass
+        self.sueldo += self.sueldo * porcentaje / 100
 
     def __str__(self):
         #return Persona.__str__(self) + ...
         return super().__str__() + " " + self.empresa + " " + str(self.sueldo) + " " + str(self.cc)
+
+    def __del__(self):
+        Empleado.numEmpleados -= 1
 
 def testPersona():
     obj1 = Persona("Jose", altura=1.77)
@@ -76,11 +88,16 @@ def testPersona():
     print(obj1.cc.entidad)
 
 def testEmpleado():
+    print('Num Empleados: ', Empleado.getNumEmpleados())
     cc1 = CuentaBancaria(3000,1234,45,12345678)
     emp1 = Empleado('Sandra',34,1.65, "Santander", 2000, cc1)
+    print('Num Empleados: ', Empleado.getNumEmpleados())
     print(emp1)
     emp1.cumpleaños()
+    emp1.subirSueldo()
     print(emp1)
+    del(emp1) # Llama directamente al destructor de la clase: __del__()
+    print('Num Empleados: ', Empleado.getNumEmpleados())
 
 if __name__ == '__main__':
     #testPersona()
