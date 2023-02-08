@@ -32,6 +32,24 @@ class Persona:
     def __lt__(self, otro):
         return self.edad < otro.edad
 
+class Empleado(Persona):
+
+    def __init__(self,nombre="", edad=0, altura=0.0, empresa="", sueldo=0.0, cc=None):
+        # Llamamos al constructor de la clase Padre:
+        Persona.__init__(self, nombre, edad, altura)  # También vale: super().__init__(nombre, edad, altura)
+        
+        # Definir los atributos de la clase Empleado:
+        self.empresa = empresa
+        self.sueldo = sueldo
+        self.cc = cc
+
+    def subirSueldo(self, porcentaje=15.0):
+        pass
+
+    def __str__(self):
+        #return Persona.__str__(self) + ...
+        return super().__str__() + " " + self.empresa + " " + str(self.sueldo) + " " + str(self.cc)
+
 def testPersona():
     obj1 = Persona("Jose", altura=1.77)
     print(obj1) # se traduce por: obj1.__str__()
@@ -59,7 +77,10 @@ def testPersona():
 
 def testEmpleado():
     cc1 = CuentaBancaria(3000,1234,45,12345678)
-    
+    emp1 = Empleado('Sandra',34,1.65, "Santander", 2000, cc1)
+    print(emp1)
+    emp1.cumpleaños()
+    print(emp1)
 
 if __name__ == '__main__':
     #testPersona()
