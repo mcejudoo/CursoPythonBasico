@@ -1,0 +1,8 @@
+aplicacion
+    principal.py (main - código principal)
+    modulos <dir>
+       __init__.py
+       empleado.py
+       persona.py
+       test.py
+    

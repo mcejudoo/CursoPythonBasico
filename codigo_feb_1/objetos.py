@@ -22,7 +22,6 @@ class Hora:
 
     def __add__(self, otro):
         return Hora((self.__h+otro.__h) + (self.__m+otro.__m) // 60, (self.__m+otro.__m) % 60)
-
     
 def testHora():
     h1 = Hora(4,55)
