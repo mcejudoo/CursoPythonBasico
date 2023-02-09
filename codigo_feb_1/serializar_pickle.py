@@ -10,7 +10,7 @@ def serializar(path, objeto):
     f = None
     try:
         f = open(path, 'wb')
-        p.dump(objeto, f)
+        p.dump(objeto, f)        
 
     except Exception as e:
         print(e)
@@ -25,7 +25,7 @@ def deserializar(path):
         f = open(path, 'rb')
         L = p.load(f)
         return L
-        
+
     except Exception as e:
         print(e)
 

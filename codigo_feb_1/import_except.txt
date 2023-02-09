@@ -1,0 +1,6 @@
+try:
+	import cpickle as p
+except:
+	import pickle as p
+
+p.load()
