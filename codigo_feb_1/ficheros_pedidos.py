@@ -23,9 +23,23 @@ def procesarPedidos(path):
                 else:
                     paises[pais] = [linea]
 
+        # Grabar el contenido del dict en cada país:
         for p, L in paises.items():
-            print(p)
-            print("\n".join(L))
+            pathPais = f"ficheros/paises/{p.replace(' ','_')}.csv" 
+            fPais = None
+            try:
+                fPais = open(pathPais, 'w')
+                #if p == 'Suiza': raise Exception('Prueba error con Suiza ...')
+                print(f'Generando fichero: {pathPais} con {len(L)} registros ...')
+                contenido = cabs + "\n" + "\n".join(L)
+                fPais.write(contenido)
+
+            except Exception as e:
+                print('Error en el fichero: ', pathPais)
+                print(e)
+
+            finally:
+                if fPais: fPais.close()
 
     except Exception as e:
         print(e)
