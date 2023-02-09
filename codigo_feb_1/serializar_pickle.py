@@ -3,12 +3,34 @@ Serializar objetos con pickle
 """
 
 from objetos import Empleado, CuentaBancaria
+import pickle as p
 
 def serializar(path, objeto):
-    pass
+    # dump
+    f = None
+    try:
+        f = open(path, 'wb')
+        p.dump(objeto, f)
+
+    except Exception as e:
+        print(e)
+
+    finally:
+        if f: f.close()
 
 def deserializar(path):
-    pass
+    # load
+    f = None
+    try:
+        f = open(path, 'rb')
+        L = p.load(f)
+        return L
+        
+    except Exception as e:
+        print(e)
+
+    finally:
+        if f: f.close()
 
 
 if __name__ == '__main__':
