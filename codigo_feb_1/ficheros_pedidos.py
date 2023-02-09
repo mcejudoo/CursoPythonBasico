@@ -5,10 +5,10 @@ carpeta ficheros/paises
 
 def procesarPedidos(path):
     """
-    Imprime el contenido del fichero por consola
+    Generar un fichero CSV por cada país.
     """
     f = None
-    paises = set()
+    paises = dict()
     cabs = None
     try:
         f = open(path, 'r')
@@ -17,10 +17,15 @@ def procesarPedidos(path):
             if not cabs:
                 cabs = linea
             else:
-                paises.add(linea.split(";")[-1])
+                pais = linea.split(";")[-1]
+                if pais in paises:
+                    paises[pais].append(linea)
+                else:
+                    paises[pais] = [linea]
 
-        L = sorted(paises)
-        print(L)
+        for p, L in paises.items():
+            print(p)
+            print("\n".join(L))
 
     except Exception as e:
         print(e)
