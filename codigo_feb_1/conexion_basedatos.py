@@ -5,6 +5,7 @@ Con SQLite3
 
 import sqlite3 as dbapi
 from os.path import isfile
+from base_datos_objetos import Empleado, Categoria, Producto
 
 class BaseDatos:
     """
@@ -23,6 +24,18 @@ class BaseDatos:
             self.conexion=dbapi.connect(path)
             self.cur = self.conexion.cursor()
 
+    def selectEmpleados(self):
+        """
+        Devuelve una colección de objetos empleado
+        """
+        empleados = []
+        sql = "select id,nombre,cargo from empleados"
+        self.cur.execute(sql)
+        for t in self.cur.fetchall():
+            empleado = Empleado(*t)
+            empleados.append(empleado)
+        return empleados
+
     def query(self, sql):
         self.cur.execute(sql)
         cabs = ";".join([t[0] for t in self.cur.description])
@@ -38,7 +51,10 @@ class BaseDatos:
 if __name__ == '__main__':
     try:
         bd = BaseDatos("../bd/empresa3.db")
-        bd.query("select * from pedidos")
+        #bd.query("select * from pedidos")
+        empleados = bd.selectEmpleados()
+        for e in empleados:
+            print(e)
 
     except Exception as e:
         print(e)
