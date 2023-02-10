@@ -24,6 +24,41 @@ class BaseDatos:
             self.conexion=dbapi.connect(path)
             self.cur = self.conexion.cursor()
 
+    def create(self, empleado):
+        """
+        Da de alta un empleado en la base de datos
+        """
+        sql = "insert into empleados(nombre, cargo) values(?,?)"
+        t = empleado.getTupla()[1:]
+        self.__actualizar(sql, t)
+
+    def delete(self, id):
+        """
+        Borra un empleado por clave primaria
+        """
+        sql = "delete from empleados where id=?"
+        t = (id,)
+        self.__actualizar(sql, t)
+
+    def update(self, empleado):
+        """
+        Actualiza un empleado de la base de datos
+        """
+        sql = "update empleados set nombre=?, cargo=? where id=?"
+        t = empleado.getTupla2()
+        self.__actualizar(sql, t)
+
+    def __actualizar(self, sql, t):
+        """
+        Ejecuta una consulta de acción dentro de una trasacción
+        """
+        try:
+            self.cur.execute(sql, t)
+            self.conexion.commit()
+        except Exception as e:
+            self.conexion.rollback()
+            raise e
+
     def read(self, id):
         """
         Devuelve un empleado de la base de datos
