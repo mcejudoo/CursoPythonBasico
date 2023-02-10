@@ -17,17 +17,22 @@ class TestPedidos(TestCase):
         """
         procesarPedidos("Pedidos.txt")
 
-    def getNumPaises(self):
+    def getPaises(self):
         paises = set()
         f = None
+        primera = True
         try:
             f = open("Pedidos.txt", 'r')
             for linea in f:
+                if primera:
+                    primera = False
+                    continue
+
                 linea = linea.rstrip()             
                 pais = linea.split(";")[-1]
                 paises.add(pais)
-
-            return len(paises)
+           
+            return sorted(paises)
 
         except Exception as e:
             print(e)
@@ -37,13 +42,21 @@ class TestPedidos(TestCase):
             if f: f.close()
 
     def testNumFicheros(self):
-        """Comprobar si se genera el mismo número de ficheros que países distintos tenemos"""
-        print(os.listdir(path))
+        """Comprobar si se genera el mismo número de ficheros que países distintos tenemos"""        
         numFicheros = len(os.listdir(path))
-        numPaises = self.getNumPaises()
-
+        numPaises = len(self.getPaises())
         self.assertEqual(numFicheros, numPaises, msg="El número de ficheros no coincide con el n. de países")
 
+
+    def testNombreFicheros(self):
+        paises = self.getPaises()
+        ficheros = os.listdir(path)
+        for p in paises:
+            nombre = f"{p.replace(' ','_')}.csv"            
+            if nombre not in ficheros:
+                self.fail(msg="No existe el fichero: "+nombre)
+
+    
     def tearDown(self):
         """
         Vaciar la carpeta de ficheros.
