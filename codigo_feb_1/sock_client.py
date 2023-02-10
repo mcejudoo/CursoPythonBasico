@@ -13,6 +13,7 @@ try:
 
     # Se conecta con el servidor:
     sock_c.connect((HOST, PUERTO))
+    print('Cliente conectado ...')
 
     while True:
         mensaje = input('Mensaje> ')

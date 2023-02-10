@@ -4,6 +4,7 @@ Ejemplo de hilos: creación, puesta en marcha, espera ..
 
 from threading import Thread
 from random import randint
+from time import sleep
 
 class HiloMensaje(Thread):
 
@@ -13,7 +14,8 @@ class HiloMensaje(Thread):
 
     def run(self):
         for i in range(self.n):
-            print('Mensaje: ', i)
+            print(self.getName()+' Mensaje: ', i)
+            sleep(randint(0,2))
         print("Fin mensajes")
 
 class HiloAleatorio(Thread):
@@ -25,12 +27,20 @@ class HiloAleatorio(Thread):
     def run(self):
         for i in range(self.n):
             print('Aleatorio: ', randint(1,100))
+            sleep(randint(1, 3))
         print('Fin aleatorio')
 
 if __name__ == '__main__':
     mensajes = HiloMensaje(10)
+    mensajes2 = HiloMensaje(6)
     aleatorio = HiloAleatorio(8)
 
-    mensajes.start()
+    mensajes.start()    
+    mensajes2.start()    
     aleatorio.start()
+
+    mensajes.join()
+    mensajes2.join()
+    aleatorio.join()
+
     print('Fin main')

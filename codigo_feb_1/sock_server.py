@@ -5,7 +5,7 @@ import socket
 
 HOST="localhost"  # 127.0.0.1
 PUERTO=8888
-CONEXIONES=1
+CONEXIONES=2
 
 sock_s = None
 sock_c = None
@@ -26,23 +26,23 @@ try:
     print("Operación listen ok!, a la espera de clientes ...")
 
     # Esperar al cliente:
+    #while True:
+    print("Vamos a esperar clientes ...")
+    sock_c, dirCliente = sock_s.accept()
+    print("Cliente aceptado: ", dirCliente)
+
     while True:
-        print("Vamos a esperar clientes ...")
-        sock_c, dirCliente = sock_s.accept()
-        print("Cliente aceptado: ", dirCliente)
+        # Esperando mensaje del cliente:
+        mensajeCli = sock_c.recv(1024)
+        mensajeCli = mensajeCli.decode('utf-8')
+        print("Cliente dice: ", mensajeCli)
 
-        while True:
-            # Esperando mensaje del cliente:
-            mensajeCli = sock_c.recv(1024)
-            mensajeCli = mensajeCli.decode('utf-8')
-            print("Cliente dice: ", mensajeCli)
+        if mensajeCli.lower()=='fin':
+            break
 
-            if mensajeCli.lower()=='fin':
-                break
-
-            mensajeSer = mensajeCli.upper()
-            # Enviar de vuelta el mensaje al cliente:
-            sock_c.send(mensajeSer.encode('utf-8'))
+        mensajeSer = mensajeCli.upper()
+        # Enviar de vuelta el mensaje al cliente:
+        sock_c.send(mensajeSer.encode('utf-8'))
 
 except Exception as e:
     print("Error: ", e)

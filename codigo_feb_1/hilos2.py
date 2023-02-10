@@ -3,6 +3,7 @@ Ejemplo de condición de carrera con una variable compartida.
 Utilización de mecanismos de sincronización (Locks)
 """
 
+import threading
 from threading import Thread, Lock
 
 iteraciones = 1000000
@@ -43,6 +44,8 @@ if __name__ == '__main__':
     h2.start()
     h3.start()
     h4.start()
+
+    print(threading.enumerate())
 
     h1.join()
     h2.join()

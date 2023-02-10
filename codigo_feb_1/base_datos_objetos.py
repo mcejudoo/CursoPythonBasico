@@ -12,6 +12,9 @@ class Empleado:
     def getTupla(self):
         return (self.id, self.nombre, self.cargo)
 
+    def getTupla2(self):
+        return (self.nombre, self.cargo, self.id)
+
     @staticmethod
     def create(d):
         return Empleado(d['id'], d['nombre'], d['cargo'])
