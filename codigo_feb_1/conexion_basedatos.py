@@ -113,14 +113,21 @@ if __name__ == '__main__':
 
         empleado = bd.read(4)
         print(empleado)
+        empleado.cargo = "Gerente de ventas"
+        bd.update(empleado)
+
+        emp = bd.read(4)
+        print(emp)
 
         #empleado = Empleado(50, "Sandra Gonzalez", "Directivo de ventas")
         #bd.create(empleado)
 
+        """
         if bd.delete(1):
             print('Registro borrado')
         else:
             print('No se ha podido eliminar')
+        """
 
     except Exception as e:
         print(e)
