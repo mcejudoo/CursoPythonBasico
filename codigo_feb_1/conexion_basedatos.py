@@ -28,17 +28,17 @@ class BaseDatos:
         """
         Da de alta un empleado en la base de datos
         """
-        sql = "insert into empleados(nombre, cargo) values(?,?)"
-        t = empleado.getTupla()[1:]
-        self.__actualizar(sql, t)
+        sql = "insert into empleados(id,nombre, cargo) values(?,?,?)"
+        t = empleado.getTupla()
+        return self.__actualizar(sql, t)
 
     def delete(self, id):
         """
         Borra un empleado por clave primaria
         """
         sql = "delete from empleados where id=?"
-        t = (id,)
-        self.__actualizar(sql, t)
+        t = (id,)        
+        return self.__actualizar(sql, t)
 
     def update(self, empleado):
         """
@@ -46,7 +46,7 @@ class BaseDatos:
         """
         sql = "update empleados set nombre=?, cargo=? where id=?"
         t = empleado.getTupla2()
-        self.__actualizar(sql, t)
+        return self.__actualizar(sql, t)
 
     def __actualizar(self, sql, t):
         """
@@ -54,7 +54,10 @@ class BaseDatos:
         """
         try:
             self.cur.execute(sql, t)
+            n = self.cur.rowcount
             self.conexion.commit()
+            return n
+
         except Exception as e:
             self.conexion.rollback()
             raise e
@@ -104,12 +107,20 @@ if __name__ == '__main__':
     try:
         bd = BaseDatos("../bd/empresa3.db")
         #bd.query("select * from pedidos")
-        empleados = bd.selectEmpleados('Gerente')
+        empleados = bd.selectEmpleados('ventas')
         for e in empleados:
             print(e)
 
         empleado = bd.read(4)
         print(empleado)
+
+        #empleado = Empleado(50, "Sandra Gonzalez", "Directivo de ventas")
+        #bd.create(empleado)
+
+        if bd.delete(1):
+            print('Registro borrado')
+        else:
+            print('No se ha podido eliminar')
 
     except Exception as e:
         print(e)
