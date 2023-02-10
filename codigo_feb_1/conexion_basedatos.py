@@ -24,13 +24,30 @@ class BaseDatos:
             self.conexion=dbapi.connect(path)
             self.cur = self.conexion.cursor()
 
-    def selectEmpleados(self):
+    def read(self, id):
+        """
+        Devuelve un empleado de la base de datos
+        """
+        sql = "select * from empleados where id=?"
+        self.cur.execute(sql, (id,))
+        t = self.cur.fetchone()
+        if not t:
+            raise ValueError('El id '+str(id)+ ' no existe en la base de datos')
+        else:
+            return Empleado(*t)
+
+    def selectEmpleados(self, cargo=None):
         """
         Devuelve una colección de objetos empleado
         """
         empleados = []
         sql = "select id,nombre,cargo from empleados"
-        self.cur.execute(sql)
+        if not cargo:            
+            self.cur.execute(sql)
+        else:
+            sql += " where cargo like ?"
+            self.cur.execute(sql, ("%"+cargo+"%",))
+
         for t in self.cur.fetchall():
             empleado = Empleado(*t)
             empleados.append(empleado)
@@ -52,9 +69,12 @@ if __name__ == '__main__':
     try:
         bd = BaseDatos("../bd/empresa3.db")
         #bd.query("select * from pedidos")
-        empleados = bd.selectEmpleados()
+        empleados = bd.selectEmpleados('Gerente')
         for e in empleados:
             print(e)
+
+        empleado = bd.read(4)
+        print(empleado)
 
     except Exception as e:
         print(e)
